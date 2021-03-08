@@ -1,11 +1,11 @@
+/*Page*/
 html, body {
     height: 100%;
 }
-
-body, .aside-1, .aside-2 {
+body {
     background-color: gray;
 }
-
+/*Content*/
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -13,23 +13,35 @@ body, .aside-1, .aside-2 {
     text-align: center;
     height: 100vh;
 }
-
 .wrapper > * {
     padding: 10px;
     flex: 1 100%;
 }
-
 .main-title {
     font-size: 3em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     text-decoration: underline;
 }
-
 .footer, main {
     background: lightgray;
 }
-  
+/*About Section*/
+.about-heading {
+    text-align: center;
+    font-size: 1em;
+    text-decoration: underline;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+main {
+    text-align: left;
+    font-size: 2em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 20px 10px 20px;
+    margin: 50px;
+}
+/*Footer*/  
 .footer {
     height: 50px;
     font-size: 1.5em;
@@ -38,18 +50,10 @@ body, .aside-1, .aside-2 {
     flex-shrink: 0;
 }
 
-main {
-    text-align: left;
-    font-size: 2.5em;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 10px 20px 10px 20px;
-    margin: 50px;
-}
-
+/*Media Queries*/
 @media all and (min-width: 600px) {
     .aside { flex: 1 0 0; }
 }
-
 @media all and (min-width: 800px) {
     .about { flex: 3 0px; }
     .aside-1 { order: 1; }
