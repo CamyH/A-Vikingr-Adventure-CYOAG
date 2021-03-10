@@ -1,63 +1,85 @@
-/*Page*/
-html, body {
-    height: 100%;
+/*Help Resources
+Used the following to help with making the footer stick to the bottom of the screen
+https://codepen.io/seanhak/pen/rmwEjz
+/* Used to read up on aligning items using Flex
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+*/
+body,html {
+    margin:0;
+    padding:0;
 }
 body {
     background-color: gray;
 }
-/*Content*/
+/*Wrapper*/
 .wrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
     font-weight: bold;
     text-align: center;
-    height: 100vh;
 }
-.wrapper > * {
-    padding: 10px;
-    flex: 1 100%;
-}
-.main-title {
+/*Page Header*/
+header {
     font-size: 3em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     text-decoration: underline;
+    overflow: hidden;
+    background:grey;
 }
-.footer, main {
-    background: lightgray;
+/*Main Content - Index*/
+main {
+    flex-grow: 1;
 }
-/*About Section*/
+.index-content {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30px 150px 30px 150px;
+}
 .about-heading {
+    font-size: 2.5em;
     text-align: center;
-    font-size: 1em;
     text-decoration: underline;
-    padding: 0 0 10px 0;
+    padding: 10px 0 10px 0;
     margin: 0;
 }
-main {
+.about-content {
     text-align: left;
     font-size: 2em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 10px 20px 10px 20px;
-    margin: 50px;
+    padding: 5px 20px 10px 20px;
 }
-/*Footer*/  
-.footer {
-    height: 50px;
-    font-size: 1.5em;
+/*Buttons - Index*/
+.play-button {
+    
+}
+.credits-button {
+
+}
+.play-button, .credits-button {
+    cursor: pointer;
+    display: block;
+    width: 30%;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 2.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+}
+/*Footer*/
+footer {
+    background:grey;
+    overflow: hidden;
+    padding: 30px 0 25px 0;
+    height: 25px;
+    font-size: 1em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
-    flex-shrink: 0;
 }
-
-/*Media Queries*/
-@media all and (min-width: 600px) {
-    .aside { flex: 1 0 0; }
-}
-@media all and (min-width: 800px) {
-    .about { flex: 3 0px; }
-    .aside-1 { order: 1; }
-    .about { order: 2; }
-    .aside-2 { order: 3; }
-    .footer { order: 4; }
+/*Setting Footer, Main Content & Buttons Colour*/
+.index-content, footer {
+    background:lightgrey;
 }
