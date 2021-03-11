@@ -15,7 +15,7 @@ main {
 body {
     background-color: gray;
 }
-.index-content {
+.index-content, .credits-content {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 30px 150px 30px 150px;
 }
@@ -38,32 +38,32 @@ header {
     overflow: hidden;
     background:grey;
 }
-/*Main Menu - Index*/
-.about-heading {
+/*Main Menu - Index & Credits*/
+.about-heading, .credits-heading {
     font-size: 2.5em;
     text-align: center;
     text-decoration: underline;
     padding: 10px 0 10px 0;
     margin: 0;
 }
-.about-content {
+.about-content, .credits {
     text-align: left;
     font-size: 2em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px 20px 10px 20px;
 }
-/*Buttons - Main Menu*/
+/*Buttons - Main Menu & Name Picker*/
 .play-button, .credits-button, .continue-button, .back-button {
     cursor: pointer;
     display: block;
-    width: 30%;
+    width: 20%;
     border: none;
     text-decoration: none;
     border-radius: 8px;
-    font-size: 2.5em;
+    font-size: 2.4em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: auto;
-    padding: 20px;
+    padding: 18px;
 }
 /*Footer*/
 footer {
@@ -76,7 +76,7 @@ footer {
     font-style: italic;
 }
 /*Setting Footer & Main Content Colour*/
-.index-content, footer {
+.index-content, .credits-content, footer {
     background:lightgrey;
 }
 /*NAME PICKER*/
@@ -86,7 +86,6 @@ footer {
 .name-picker-heading {
     font-size: 2.5em;
     text-align: center;
-    text-decoration: underline;
     padding: 10px 0 10px 0;
     margin: 0;
 }

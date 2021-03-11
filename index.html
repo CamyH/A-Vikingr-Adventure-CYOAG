@@ -6,6 +6,7 @@
         <title>A Vikingr Adventure</title>
         <link rel="stylesheet" href="/CSS/stylesheet.css">
         <script src="JS/indexContentRefresh.js"></script>
+        <script src="JS/loadPages.js"></script>
     </head>
 
     <body>
@@ -44,11 +45,17 @@
                 <main>
                     <section class="index-content">
                         <h4 class="name-picker-heading">Before you start, pick the name of your Viking warrior:</h4>
-
+                        <select name="names-list">
+                            <option value="thor">Thor</option>
+                            <option value="odin">Odin</option>
+                            <option value="ivar">Ivar</option>
+                            <option value="ragnar">Ragnar</option>
+                            <option value="gunnar">Gunnar</option>
+                        </select>
                     </section>
                     <button class="continue-button" onClick="hideMainMenu();">CONTINUE</button>
                     &nbsp;
-                    <button id="previous-content" class="back-button" onClick="previousPageButton();">BACK</button>
+                    <button id="previous-content" class="back-button" onClick="previousContentButton();">BACK</button>
                     <footer>Made by Cameron Hunt</footer>
             </div>
         </div>
