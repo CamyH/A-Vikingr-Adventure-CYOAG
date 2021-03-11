@@ -4,13 +4,22 @@ https://codepen.io/seanhak/pen/rmwEjz
 /* Used to read up on aligning items using Flex
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
 */
+/*Default Styles*/
 body,html {
     margin:0;
     padding:0;
 }
+main {
+    flex-grow: 1;
+}
 body {
     background-color: gray;
 }
+.index-content {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30px 150px 30px 150px;
+}
+/*MAIN MENU*/
 /*Wrapper*/
 .wrapper {
     display: flex;
@@ -29,14 +38,7 @@ header {
     overflow: hidden;
     background:grey;
 }
-/*Main Content - Index*/
-main {
-    flex-grow: 1;
-}
-.index-content {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 30px 150px 30px 150px;
-}
+/*Main Menu - Index*/
 .about-heading {
     font-size: 2.5em;
     text-align: center;
@@ -50,14 +52,8 @@ main {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px 20px 10px 20px;
 }
-/*Buttons - Index*/
-.play-button {
-    
-}
-.credits-button {
-
-}
-.play-button, .credits-button {
+/*Buttons - Main Menu*/
+.play-button, .credits-button, .continue-button, .back-button {
     cursor: pointer;
     display: block;
     width: 30%;
@@ -79,7 +75,24 @@ footer {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
 }
-/*Setting Footer, Main Content & Buttons Colour*/
+/*Setting Footer & Main Content Colour*/
 .index-content, footer {
     background:lightgrey;
+}
+/*NAME PICKER*/
+#name-picker {
+    display: none;
+}
+.name-picker-heading {
+    font-size: 2.5em;
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+.about-content {
+    text-align: left;
+    font-size: 2em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px 20px 10px 20px;
 }
