@@ -10,3 +10,7 @@ function backToIndex() {
 function creditsPage() {
     window.location.href = "../HTML/credits.html";
 }
+// Loads Main Menu
+function mainMenu() {
+    window.location.href = "../index.html";
+}

@@ -1,8 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head></head>
+    <head>
+        <meta charset="UTF-8">
+        <title>A Vikingr Adventure</title>
+        <!--For Widescreen devices-->
+        <link rel="stylesheet" media="screen and (min-width: 1150px)" href="/CSS/stylesheetPC.css">
+        <!--For Mobile Devices-->
+        <link rel="stylesheet" media="screen and (max-width: 1150px)" href="/CSS/stylesheetMobile.css">
+        <script src="JS/indexContentRefresh.js"></script>
+        <script src="JS/loadPages.js"></script>
+        <script src="JS/gameSettings.js"></script>
+    </head>
 
-    <body></body>
+    <body>
+        <div id="page1">
+            <div class="wrapper">
+                <header class="main-title">A Vikingr Adventure</header>
+                <main>
+                    <section class="index-content">
+                        <p class="page1-story">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                            Sed id semper risus in hendrerit gravida rutrum quisque non. Scelerisque felis imperdiet
+                            proin fermentum leo vel orci.
+                            Nec tincidunt praesent semper feugiat nibh sed pulvinar.
+                            Ornare aenean euismod elementum nisi quis. Eget est lorem ipsum dolor sit amet consectetur
+                            adipiscing elit. <br>
+                            In ornare quam viverra orci sagittis eu volutpat odio. Id diam vel quam elementum pulvinar
+                            etiam. Dolor morbi non arcu risus quis.
+                            Lectus proin nibh nisl condimentum id venenatis a condimentum.<br>
+                            Sven decides that we will attack these soldiers and find out who they are and where in
+                            England you have landed. How should you attack this camp?</p>
+                    </section>
+                    <button class="option1-button" onClick="hideNamePicker();">Fire a volley of arrows into the camp
+                        and rush in to mop up any remaining soldiers</button>
+                    &nbsp;
+                    <button class="option2-button" onClick="hideNamePicker();">Take the soldiers by surprise by rushing
+                        into the camp.</button>
+                    &nbsp;
+                    <button id="previous-content" class="back-button" onClick="mainMenu();">MAIN
+                        MENU</button>
+                </main>
+                <footer>Made by Cameron Hunt</footer>
+            </div>
+        </div>
+    </body>
 
 </html>

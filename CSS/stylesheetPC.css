@@ -4,6 +4,9 @@ https://codepen.io/seanhak/pen/rmwEjz
 /* Used to read up on aligning items using Flex
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
 */
+
+/*FOR WIDESCREEN*/
+
 /*Default Styles*/
 body,html {
     margin:0;
@@ -38,6 +41,19 @@ header {
     overflow: hidden;
     background:grey;
 }
+/*Index Page Buttons - Main Menu, Name Picker & Page 1*/
+.play-button, .credits-button, .continue-button, .back-button, .option1-button, .option2-button {
+    cursor: pointer;
+    display: block;
+    width: 20%;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    padding: 10px;
+}
 /*Main Menu - Index & Credits*/
 .about-heading, .credits-heading {
     font-size: 2.5em;
@@ -51,19 +67,6 @@ header {
     font-size: 2em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px 20px 10px 20px;
-}
-/*Buttons - Main Menu & Name Picker*/
-.play-button, .credits-button, .continue-button, .back-button {
-    cursor: pointer;
-    display: block;
-    width: 20%;
-    border: none;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 2.4em;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: auto;
-    padding: 18px;
 }
 /*Name Picker Page*/
 .names-list {
@@ -89,7 +92,9 @@ footer {
 .index-content, .credits-content, footer {
     background:lightgrey;
 }
+
 /*NAME PICKER*/
+
 #name-picker {
     display: none;
 }
@@ -104,4 +109,12 @@ footer {
     font-size: 2em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px 20px 10px 20px;
+}
+
+/*STORY PAGE 1*/
+#page0 {
+    display: none;
+}
+.page0-story {
+    padding: 20px;
 }

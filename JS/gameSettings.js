@@ -1,6 +1,11 @@
 /*Help Resources Used
 https://stackoverflow.com/questions/8832375/how-to-get-selected-value-from-dropdown-list-in-javascript/8832500
 */
+// Set initial soldiers
+var soliders = 118;
+function loseSoldiers {
+    soldiers -= 2;
+}
 
 // Get chosen name
 function getName() {
