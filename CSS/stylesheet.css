@@ -9,7 +9,7 @@ body,html {
     margin:0;
     padding:0;
 }
-main {
+main, .name-picker-main {
     flex-grow: 1;
 }
 body {
@@ -64,6 +64,10 @@ header {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: auto;
     padding: 18px;
+}
+/*Name Picker Page*/
+#names-list-selected {
+    background-color: aqua;
 }
 /*Footer*/
 footer {

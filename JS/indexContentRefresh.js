@@ -1,9 +1,11 @@
-/* Resources Used
+/* Help Resources Used
 */
+// Hide Main Menu Screen
 function hideMainMenu() {
     document.getElementById("main-menu").style.display = "none";
     showNamePicker();
 }
+// Show Name Picker Screen
 function showNamePicker() {
     document.getElementById("name-picker").style.display = "block";;
 }
