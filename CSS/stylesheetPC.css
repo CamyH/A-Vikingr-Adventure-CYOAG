@@ -1,0 +1,107 @@
+/*Help Resources
+Used the following to help with making the footer stick to the bottom of the screen
+https://codepen.io/seanhak/pen/rmwEjz
+/* Used to read up on aligning items using Flex
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+*/
+/*Default Styles*/
+body,html {
+    margin:0;
+    padding:0;
+}
+main, .name-picker-main {
+    flex-grow: 1;
+}
+body {
+    background-color: gray;
+}
+.index-content, .credits-content {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30px 150px 30px 150px;
+}
+/*MAIN MENU*/
+/*Wrapper*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    font-weight: bold;
+    text-align: center;
+}
+/*Page Header*/
+header {
+    font-size: 3em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    overflow: hidden;
+    background:grey;
+}
+/*Main Menu - Index & Credits*/
+.about-heading, .credits-heading {
+    font-size: 2.5em;
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+.about-content, .credits {
+    text-align: left;
+    font-size: 2em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px 20px 10px 20px;
+}
+/*Buttons - Main Menu & Name Picker*/
+.play-button, .credits-button, .continue-button, .back-button {
+    cursor: pointer;
+    display: block;
+    width: 20%;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 2.4em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    padding: 18px;
+}
+/*Name Picker Page*/
+.names-list {
+    text-align: center;
+    width: 100px;
+    font-size: 1.5em;
+    border: 6px solid black;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+/*Footer*/
+footer {
+    background:grey;
+    overflow: hidden;
+    padding: 30px 0 25px 0;
+    height: 25px;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+/*Setting Footer & Main Content Colour*/
+.index-content, .credits-content, footer {
+    background:lightgrey;
+}
+/*NAME PICKER*/
+#name-picker {
+    display: none;
+}
+.name-picker-heading {
+    font-size: 2.5em;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+.about-content {
+    text-align: left;
+    font-size: 2em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px 20px 10px 20px;
+}
