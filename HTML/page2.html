@@ -1,8 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head></head>
+    <head>
+        <meta charset="UTF-8">
+        <title>A Vikingr Adventure</title>
+        <!--For Widescreen devices-->
+        <link rel="stylesheet" media="screen and (min-width: 1150px)" href="/CSS/stylesheetPC.css">
+        <!--For Mobile Devices-->
+        <link rel="stylesheet" media="screen and (max-width: 1150px)" href="/CSS/stylesheetMobile.css">
+        <script src="../JS/loadPages.js"></script>
+        <script src="../JS/gameSettings.js"></script>
+    </head>
 
-    <body></body>
+    <body>
+        <div id="page2">
+            <div class="wrapper">
+                <header class="main-title">A Vikingr Adventure</header>
+                <main>
+                    <section class="index-content">
+                        <p class="page2-story">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                            Sed id semper risus in hendrerit gravida rutrum quisque non. Scelerisque felis imperdiet
+                            proin fermentum leo vel orci.
+                            Nec tincidunt praesent semper feugiat nibh sed pulvinar.
+                            Ornare aenean euismod elementum nisi quis. Eget est lorem ipsum dolor sit amet consectetur
+                            adipiscing elit. <br>
+                            In ornare quam viverra orci sagittis eu volutpat odio. Id diam vel quam elementum pulvinar
+                            etiam. Dolor morbi non arcu risus quis.
+                            Lectus proin nibh nisl condimentum id venenatis a condimentum.<br>
+                            Sven talks with his men, they collectively decide to attack this fort, some more wearily
+                            than others. How should you conquer this fort?</p>
+                    </section>
+                    <button class="option1-button" onClick="hideNamePicker();">Splits the men into two groups and
+                        launche a sneak attack from two sides of the Fort.</button>
+                    &nbsp;
+                    <button class="option2-button" onClick="hideNamePicker();">Sven and his men try to sneak into the
+                        Fort for a surprise attack against the Saxons.</button>
+                    &nbsp;
+                    <button class="option3-button" onClick="hideNamePicker();">Sven and his men attempt a head on
+                        surprise attack of the Fort, the true Viking way.</button>
+                    &nbsp;
+                    <button class="back-button" onClick="mainMenu();">MAIN MENU</button>
+                    &nbsp;
+                </main>
+                <footer>Made by Cameron Hunt</footer>
+            </div>
+        </div>
+    </body>
 
 </html>

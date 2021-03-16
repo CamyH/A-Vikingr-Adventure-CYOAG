@@ -41,8 +41,8 @@ header {
     overflow: hidden;
     background:grey;
 }
-/*Index Page Buttons - Main Menu, Name Picker & Page 1*/
-.play-button, .credits-button, .continue-button, .back-button, .option1-button, .option2-button {
+/*All Buttons*/
+.play-button, .credits-button, .continue-button, .back-button, .option1-button, .option2-button, .option3-button {
     cursor: pointer;
     display: block;
     width: 20%;

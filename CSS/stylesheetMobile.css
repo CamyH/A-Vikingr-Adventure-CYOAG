@@ -41,8 +41,8 @@ header {
     overflow: hidden;
     background:grey;
 }
-/*Index Page Buttons - Main Menu, Name Picker & Page 1*/
-.play-button, .credits-button, .continue-button, .back-button, .option1-button, .option2-button {
+/*All Buttons*/
+.play-button, .credits-button, .continue-button, .back-button, .option1-button, .option2-button, .option3-button {
     cursor: pointer;
     display: block;
     width: 20%;
@@ -112,7 +112,7 @@ footer {
 }
 
 /*ALL STORY PAGE PROPERTIES*/
-.page0-story, .page1-story {
+.page0-story, .page1-story, .page2-story {
     padding: 20px;
 }
 
@@ -123,4 +123,10 @@ footer {
 }
 
 /*STORY PAGE 1*/
+#outcome1-text {
+    font-size: 2em;
+    padding: 20px;
+}
+
+/*STORY PAGE 2*/
 
