@@ -111,10 +111,16 @@ footer {
     padding: 5px 20px 10px 20px;
 }
 
-/*STORY PAGE 1*/
+/*ALL STORY PAGE PROPERTIES*/
+.page0-story, .page1-story {
+    padding: 20px;
+}
+
+/*STORY PAGE 0 (INDEX PAGE)*/
+
 #page0 {
     display: none;
 }
-.page0-story {
-    padding: 20px;
-}
+
+/*STORY PAGE 1*/
+
