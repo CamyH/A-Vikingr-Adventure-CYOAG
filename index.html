@@ -11,6 +11,7 @@
         <script src="JS/indexContentRefresh.js"></script>
         <script src="JS/loadPages.js"></script>
         <script src="JS/gameSettings.js"></script>
+        <script src="JS/outcomes.js"></script>
     </head>
 
     <body>
@@ -85,9 +86,10 @@
                             What should Sven do? Should he divide up their remaining food and give it to the crew or
                             save it for later?</p>
                     </section>
-                    <button class="option1-button" onClick="hideNamePicker();">Divide up remaining food</button>
+                    <button type="button" class="option1-button" onClick="goToPage1();">Divide up the remaining
+                        food</button>
                     &nbsp;
-                    <button class="option2-button" onClick="hideNamePicker();">Save for later</button>
+                    <button class="option2-button" onClick="saveForLater();">Save for later</button>
                     &nbsp;
                     <button id="previous-content" class="back-button" onClick="mainMenu();">MAIN
                         MENU</button>

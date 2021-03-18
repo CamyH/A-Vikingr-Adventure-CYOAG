@@ -123,6 +123,15 @@ footer {
 }
 
 /*STORY PAGE 1*/
+#page1 {
+    display: none;
+}
+#consequence1 {
+    display: none;
+}
+#consequence2 {
+    display: none;
+}
 #outcome1-text {
     font-size: 2em;
     padding: 20px;

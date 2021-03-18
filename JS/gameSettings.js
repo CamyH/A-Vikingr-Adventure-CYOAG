@@ -3,7 +3,7 @@ https://stackoverflow.com/questions/8832375/how-to-get-selected-value-from-dropd
 */
 // Set initial soldiers
 var soliders = 118;
-function loseSoldiers {
+function loseSoldiers() {
     soldiers -= 2;
 }
 
