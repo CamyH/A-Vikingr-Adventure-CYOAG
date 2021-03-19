@@ -68,6 +68,9 @@ header {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px 20px 10px 20px;
 }
+.credits {
+    text-align: center;
+}
 /*Name Picker Page*/
 .names-list {
     text-align: center;

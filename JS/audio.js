@@ -2,6 +2,7 @@
 https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API
 */
 
-// Audio file
+// legacy browser support
+const AudioContext = window.AudioContext || window.webKitAudioContext;
 
-// ToDo: Add audio support using web api
+const audioContext = new AudioContext;
