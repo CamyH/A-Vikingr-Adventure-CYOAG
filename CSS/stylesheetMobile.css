@@ -125,6 +125,10 @@ footer {
     display: none;
 }
 
+#outcomes {
+    display: none;
+}
+
 /*STORY PAGE 1*/
 #page1 {
     display: none;

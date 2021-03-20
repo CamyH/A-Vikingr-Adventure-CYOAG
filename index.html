@@ -11,7 +11,6 @@
         <script src="JS/indexContentRefresh.js"></script>
         <script src="JS/loadPages.js"></script>
         <script src="JS/gameSettings.js"></script>
-        <script src="JS/outcomes.js"></script>
     </head>
 
     <body>
@@ -86,10 +85,11 @@
                             What should Sven do? Should he divide up their remaining food and give it to the crew or
                             save it for later?</p>
                     </section>
-                    <button type="button" class="option1-button" onClick="">Divide up the remaining
+                    <button type="button" class="option1-button" onClick="option1();">Divide up the
+                        remaining
                         food</button>
                     &nbsp;
-                    <button class="option2-button" onClick="test2();">Save for later</button>
+                    <button class="option2-button" onClick="option2();">Save for later</button>
                     &nbsp;
                     <button id="previous-content" class="back-button" onClick="mainMenu();">MAIN
                         MENU</button>
@@ -97,6 +97,26 @@
                 <footer>Made by Cameron Hunt</footer>
             </div>
         </div>
+
+        <!--Outcomes-->
+        <div id="outcomes">
+            <div class="wrapper">
+                <header class="main-title">A Vikingr Adventure</header>
+                <main>
+                    <section class="index-content">
+                        <!--Outcome Message-->
+                        <p id="consequence1"></p>
+                        <p id="consequence2"></p>
+                        <!--Continue Button-->
+                        <button class="continue-button" onClick="divideFood();">CONTINUE</button>
+                    </section>
+                    <button id="previous-content" class="back-button" onClick="mainMenu();">MAIN
+                        MENU</button>
+                </main>
+                <footer>Made by Cameron Hunt</footer>
+            </div>
+        </div>
     </body>
+    <script src="JS/outcomes.js"></script>
 
 </html>
