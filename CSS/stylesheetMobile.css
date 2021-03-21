@@ -22,6 +22,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 30px 100px 30px 100px;
 }
+
 /*MAIN MENU*/
 /*Wrapper*/
 .wrapper {
@@ -71,6 +72,10 @@ header {
 .credits {
     text-align: center;
 }
+/*Setting Footer & Main Content Colour*/
+.index-content, .credits-content, footer {
+    background:lightgrey;
+}
 /*Name Picker Page*/
 .names-list {
     text-align: center;
@@ -80,20 +85,6 @@ header {
     border-width: 1px;
     border-radius: 5px;
     margin-bottom: 20px;
-}
-/*Footer*/
-footer {
-    background:grey;
-    overflow: hidden;
-    padding: 30px 0 25px 0;
-    height: 25px;
-    font-size: 1em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-}
-/*Setting Footer & Main Content Colour*/
-.index-content, .credits-content, footer {
-    background:lightgrey;
 }
 
 /*NAME PICKER*/
@@ -120,29 +111,26 @@ footer {
 }
 
 /*STORY PAGE 0 (INDEX PAGE)*/
-
 #page0 {
     display: none;
 }
 
+/*OUTCOMES PAGE (INDEX PAGE)*/
 #outcomes {
     display: none;
 }
 
 /*STORY PAGE 1*/
-#page1 {
-    display: none;
-}
-#consequence1 {
-    display: none;
-}
-#consequence2 {
-    display: none;
-}
-#outcome1-text {
-    font-size: 2em;
-    padding: 20px;
-}
 
 /*STORY PAGE 2*/
 
+/*Footer*/
+footer {
+    background:grey;
+    overflow: hidden;
+    padding: 30px 0 25px 0;
+    height: 25px;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
