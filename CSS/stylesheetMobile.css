@@ -7,7 +7,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Alignin
 
 /*FOR MOBILE*/
 
-/*Default Styles*/
+/*
+######################### Default Styles #########################
+*/
 body,html {
     margin:0;
     padding:0;
@@ -23,7 +25,9 @@ body {
     margin: 30px 100px 30px 100px;
 }
 
-/*MAIN MENU*/
+/* 
+######################### MAIN MENU #########################
+*/
 /*Wrapper*/
 .wrapper {
     display: flex;
@@ -33,7 +37,9 @@ body {
     font-weight: bold;
     text-align: center;
 }
-/*Page Header*/
+/*
+######################### Page Header #########################
+*/
 header {
     font-size: 2em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -42,7 +48,9 @@ header {
     overflow: hidden;
     background:grey;
 }
-/*All Buttons*/
+/*
+######################### All Buttons #########################
+*/
 .play-button, .credits-button, .continue-button, .back-button, .option1-button, .option2-button, .option3-button {
     cursor: pointer;
     display: block;
@@ -55,7 +63,9 @@ header {
     margin: auto;
     padding: 10px;
 }
-/*Main Menu - Index & Credits*/
+/* 
+######################### Main Menu - Index & Credits ######################### 
+*/
 .about-heading, .credits-heading {
     font-size: 1.5em;
     text-align: center;
@@ -72,11 +82,15 @@ header {
 .credits {
     text-align: center;
 }
-/*Setting Footer & Main Content Colour*/
+/*
+######################### Setting Footer & Main Content Colour #########################
+*/
 .index-content, .credits-content, footer {
     background:lightgrey;
 }
-/*Name Picker Page*/
+/*
+######################### Name Picker Page #########################
+*/
 .names-list {
     text-align: center;
     width: 100px;
@@ -86,9 +100,6 @@ header {
     border-radius: 5px;
     margin-bottom: 20px;
 }
-
-/*NAME PICKER*/
-
 #name-picker {
     display: none;
 }
@@ -105,28 +116,40 @@ header {
     padding: 5px 20px 10px 20px;
 }
 
-/*ALL STORY PAGE PROPERTIES*/
+/*
+######################### ALL STORY PAGE PROPERTIES #########################
+*/
 .page0-story, .page1-story, .page2-story, .page3a-story {
     padding: 20px;
 }
 
-/*STORY PAGE 0 (INDEX PAGE)*/
+/*
+######################### STORY PAGE 0 (INDEX PAGE) #########################
+*/
 #page0 {
     display: none;
 }
 
-/*OUTCOMES PAGE (INDEX PAGE)*/
+/*
+######################### OUTCOMES PAGE (INDEX PAGE) #########################
+*/
 #outcomes {
     display: none;
 }
+#consequence1, #consequence2 { padding-top: 10px; }
 
-/*STORY PAGE 1*/
+/*
+######################### STORY PAGE 1 #########################
+*/
 
-/*STORY PAGE 2*/
+/*
+######################### STORY PAGE 2 #########################
+*/
 
-/*Footer*/
+/*
+######################### Footer #########################
+*/
 footer {
-    background:grey;
     overflow: hidden;
     padding: 30px 0 25px 0;
     height: 25px;
