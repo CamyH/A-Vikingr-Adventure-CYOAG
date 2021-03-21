@@ -131,9 +131,9 @@ header {
 }
 
 /*
-######################### OUTCOMES PAGE (INDEX PAGE) #########################
+######################### OUTCOMES PAGES #########################
 */
-#outcomes {
+#outcomes-index, #outcomes-page1 {
     display: none;
 }
 #consequence1, #consequence2 { padding-top: 10px; }

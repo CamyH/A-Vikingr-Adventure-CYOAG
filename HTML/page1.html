@@ -32,14 +32,34 @@
                             Sven decides that we will attack these soldiers and find out who they are and where in
                             England they have landed. How should you attack this camp?</p>
                     </section>
-                    <button class="option1-button" onClick="">Fire a volley of arrows into the camp
+                    <button class="option1-button" onClick="option1Page1();">Fire a volley of arrows into the camp
                         and rush in to mop up any remaining soldiers.</button>
                     &nbsp;
-                    <button class="option2-button" onClick="">Rush into the camp and take the soldiers
+                    <button class="option2-button" onClick="option2Page1();">Rush into the camp and take the soldiers
                         by surprise.</button>
                     &nbsp;
                     <button class="back-button" onClick="mainMenu();">MAIN MENU</button>
                     &nbsp;
+                </main>
+                <footer>Made by Cameron Hunt</footer>
+            </div>
+        </div>
+
+        <!--Outcomes-->
+        <div id="outcomes-page1">
+            <div class="wrapper">
+                <header class="main-title">A Vikingr Adventure</header>
+                <main>
+                    <section class="index-content">
+                        <!--Outcome Messages-->
+                        <p id="consequence1"></p>
+                        <p id="consequence2"></p>
+                        <!--Continue Button-->
+                        <button class="continue-button" onClick="continueButtonPage1();">CONTINUE</button>
+                        &nbsp;
+                    </section>
+                    <button id="previous-content" class="back-button" onClick="mainMenu();">MAIN
+                        MENU</button>
                 </main>
                 <footer>Made by Cameron Hunt</footer>
             </div>

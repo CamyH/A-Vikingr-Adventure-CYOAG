@@ -11,6 +11,7 @@
         <script src="JS/indexContentRefresh.js"></script>
         <script src="JS/loadPages.js"></script>
         <script src="JS/gameSettings.js"></script>
+        <script src="JS/outcomes.js"></script>
     </head>
 
     <body>
@@ -85,11 +86,11 @@
                             What should Sven do? Should he divide up their remaining food and give it to the crew or
                             save it for later?</p>
                     </section>
-                    <button type="button" class="option1-button" onClick="option1();">Divide up the
+                    <button type="button" class="option1-button" onClick="option1Index();">Divide up the
                         remaining
                         food</button>
                     &nbsp;
-                    <button class="option2-button" onClick="option2();">Save for later</button>
+                    <button class="option2-button" onClick="option2Index();">Save for later</button>
                     &nbsp;
                     <button id="previous-content" class="back-button" onClick="mainMenu();">MAIN
                         MENU</button>
@@ -99,7 +100,7 @@
         </div>
 
         <!--Outcomes-->
-        <div id="outcomes">
+        <div id="outcomes-index">
             <div class="wrapper">
                 <header class="main-title">A Vikingr Adventure</header>
                 <main>
@@ -108,7 +109,7 @@
                         <p id="consequence1"></p>
                         <p id="consequence2"></p>
                         <!--Continue Button-->
-                        <button class="continue-button" onClick="continueButton();">CONTINUE</button>
+                        <button class="continue-button" onClick="continueButtonIndex();">CONTINUE</button>
                         &nbsp;
                     </section>
                     <button id="previous-content" class="back-button" onClick="mainMenu();">MAIN
@@ -118,6 +119,5 @@
             </div>
         </div>
     </body>
-    <script src="JS/outcomes.js"></script>
 
 </html>
