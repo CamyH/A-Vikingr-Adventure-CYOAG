@@ -5,7 +5,7 @@ function option1Index() {
     document.getElementById("page0").style.display = "none";
     consequence1Index();
 }
-// Hides PAge 0 Content & calls correct consequence function
+// Hides Page 0 Content & calls correct consequence function
 function option2Index() {
     document.getElementById("page0").style.display = "none";
     consequence2Index();
