@@ -11,3 +11,5 @@ function loadPage3a() { window.location.href = "/HTML/page3a.html"; }
 function loadPage3b() { window.location.href = "/HTML/page3b.html"; }
 // Loads Page 3C
 function loadPage3c() { window.location.href = "/HTML/page3c.html"; }
+// Loads Playthough Stats Page
+function loadPlaythroughStats() { window.location.href = "/HTML/playthroughStats.html"; }
