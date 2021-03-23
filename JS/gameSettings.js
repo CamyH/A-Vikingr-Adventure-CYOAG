@@ -9,9 +9,11 @@ function loseSoldiers() {
 
 // Get chosen name
 function getName() {
-    var index = document.getElementById("names-list").selectedIndex;
+    let index = document.getElementById("names-list").selectedIndex;
     // Name Variable stores chosen name of character
     let name = document.getElementById("names-list").options[index].text;
 
-    //alert(name);
+    // Session storage to store player's name
+    sessionStorage.setItem("playerName", name);
+    //alert(sessionStorage.getItem("playerName"));
 }

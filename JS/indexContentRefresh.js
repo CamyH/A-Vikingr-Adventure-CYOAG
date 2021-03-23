@@ -13,6 +13,7 @@ function showNamePicker() {
 function hideNamePicker() {
     document.getElementById("name-picker").style.display = "none";
     showPage1();
+    getName();
 }
 // Show Page 1 of the story
 function showPage1() {

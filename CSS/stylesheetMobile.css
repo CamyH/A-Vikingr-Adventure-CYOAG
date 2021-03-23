@@ -91,7 +91,7 @@ header {
 /*
 ######################### Name Picker Page #########################
 */
-.names-list {
+#names-list {
     text-align: center;
     width: 100px;
     font-size: 0.8em;
@@ -152,8 +152,13 @@ header {
 footer {
     overflow: hidden;
     padding: 30px 0 25px 0;
-    height: 25px;
+    height: 30px;
     font-size: 1em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
+}
+.footer-gh-icon {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
 }
