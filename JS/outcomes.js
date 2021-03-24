@@ -19,6 +19,7 @@ function consequence1Index() {
     // Add message to p element
     var message;
     message = "Dividing up the remaining food has given a morale boost to the crew and they will fight better.";
+    sessionStorage.setItem("consequence1", message);
     document.getElementById("consequence1").innerHTML = message;
 }
 //Adds consequence2 message
@@ -30,6 +31,7 @@ function consequence2Index() {
     // Add message to p element
     var message;
     message = "Saving the food has caused the crew’s morale to decrease.";
+    sessionStorage.setItem("consequence2", message);
     document.getElementById("consequence2").innerHTML = message;
 }
 
