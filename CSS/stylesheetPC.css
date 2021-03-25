@@ -18,7 +18,7 @@ main, .name-picker-main {
     flex-grow: 1;
 }
 body {
-    background-color: gray;
+    background-color: #214252;
 }
 .index-content, .ending1-content, .credits-content {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -40,12 +40,14 @@ body {
 ######################### Page Header #########################
 */
 header {
-    font-size: 3em;
+    font-size: 2em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     text-decoration: underline;
     overflow: hidden;
-    background:grey;
+    padding: 15px 0 30px 0;
+    height: 30px;
+    background: #af2d2d;
 }
 /*
 ######################### All Buttons #########################
@@ -82,10 +84,10 @@ header {
     text-align: center;
 }
 /*
-######################### Setting Footer & Main Content Colour #########################
+######################### Setting Footer, Main Content Colour & All Buttons #########################
 */
-.index-content, ,.ending1-content, .credits-content, footer {
-    background:lightgrey;
+.index-content, .credits-content, .ending1-content, footer, button {
+    background:#af2d2d;
 }
 /*
 ######################### Name Picker Page #########################
