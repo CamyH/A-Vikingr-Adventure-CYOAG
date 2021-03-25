@@ -1,8 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head></head>
+    <head>
+        <meta charset="UTF-8">
+        <title>A Vikingr Adventure</title>
+        <!--For Widescreen devices-->
+        <link rel="stylesheet" media="screen and (min-width: 1150px)" href="/CSS/stylesheetPC.css">
+        <!--For Mobile Devices-->
+        <link rel="stylesheet" media="screen and (max-width: 1150px)" href="/CSS/stylesheetMobile.css">
+        <script src="../JS/loadPages.js"></script>
+        <script src="../JS/gameSettings.js"></script>
+        <script src="../JS/outcomes.js"></script>
+    </head>
 
-    <body></body>
+    <body>
+        <div id="ending1">
+            <div class="wrapper">
+                <header class="main-title">A Vikingr Adventure</header>
+                <main>
+                    <section class="ending2-content">
+                        <p class="ending2-text">You have finished the game! <br>
+                            You got the second ending.</p>
+                    </section>
+                    &nbsp;
+                    <button class="main-menu-button" onClick="loadPlaythroughStats();">CONTINUE</button>
+                </main>
+                <footer>Made by Cameron Hunt
+                    <br><a href="https://github.com/CamyH/A-Vikingr-Adventure-CYOAG" target="_blank"><img
+                            class="footer-gh-icon" src="/Image/github-icon.png"></a>
+                </footer>
+            </div>
+        </div>
+    </body>
 
 </html>

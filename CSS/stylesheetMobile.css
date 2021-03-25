@@ -22,7 +22,7 @@ main, .name-picker-main {
 body {
     background-color: #214252;
 }
-.index-content, .credits-content, .ending1-content {
+.index-content, .credits-content, .ending1-content, .ending2-content {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 30px 100px 30px 100px;
 }
@@ -87,9 +87,9 @@ header {
     text-align: center;
 }
 /*
-######################### Setting Footer, Main Content Colour & All Buttons #########################
+######################### Setting Footer, Main Content, All Buttons & Ending Pages Colour #########################
 */
-.index-content, .credits-content, .ending1-content, footer, button {
+.index-content, .credits-content, .ending1-content, .ending2-content, footer, button {
     background:#af2d2d;
 }
 /*
@@ -148,6 +148,20 @@ header {
 
 /*
 ######################### STORY PAGE 2 #########################
+*/
+
+/*
+######################### ALL ENDING PAGES #########################
+*/
+.ending1-text, .ending2-text {
+    padding: 20px;
+}
+/*
+######################### ENDING 1 PAGE #########################
+*/
+
+/*
+######################### ENDING 2 PAGE #########################
 */
 
 /*
