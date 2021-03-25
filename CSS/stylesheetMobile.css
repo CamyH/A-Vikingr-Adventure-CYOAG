@@ -1,8 +1,10 @@
 /*Help Resources
 Used the following to help with making the footer stick to the bottom of the screen
 https://codepen.io/seanhak/pen/rmwEjz
-/* Used to read up on aligning items using Flex
+Used to read up on aligning items using Flex
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+Used to pick colour palette
+https://colorhunt.co/
 */
 
 /*FOR MOBILE*/
@@ -10,7 +12,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Alignin
 /*
 ######################### Default Styles #########################
 */
-body,html {
+body, html {
     margin:0;
     padding:0;
 }
