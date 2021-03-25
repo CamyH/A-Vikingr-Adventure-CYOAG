@@ -1,8 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head></head>
+    <head>
+        <meta charset="UTF-8">
+        <title>A Vikingr Adventure</title>
+        <!--For Widescreen devices-->
+        <link rel="stylesheet" media="screen and (min-width: 1150px)" href="/CSS/stylesheetPC.css">
+        <!--For Mobile Devices-->
+        <link rel="stylesheet" media="screen and (max-width: 1150px)" href="/CSS/stylesheetMobile.css">
+        <script src="../JS/loadPages.js"></script>
+        <script src="../JS/gameSettings.js"></script>
+        <script src="../JS/outcomes.js"></script>
+    </head>
 
-    <body></body>
+    <body>
+        <div id="ending1">
+            <div class="wrapper">
+                <header class="main-title">A Vikingr Adventure</header>
+                <main>
+                    <section class="ending1-content">
+                        <p class="ending1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                            Sed id semper risus in hendrerit gravida rutrum quisque non. Scelerisque felis imperdiet
+                            proin fermentum leo vel orci.
+                            Nec tincidunt praesent semper feugiat nibh sed pulvinar.
+                            Ornare aenean euismod elementum nisi quis. Eget est lorem ipsum dolor sit amet consectetur
+                            adipiscing elit. <br>
+                            In ornare quam viverra orci sagittis eu volutpat odio. Id diam vel quam elementum pulvinar
+                            etiam. Dolor morbi non arcu risus quis.
+                            Lectus proin nibh nisl condimentum id venenatis a condimentum.<br>
+                            Sven talks with his men, they collectively decide to attack this fort, some more wearily
+                            than others. How should you conquer this fort?</p>
+                    </section>
+                    &nbsp;
+                    <button class="main-menu-button" onClick="loadPlaythroughStats();">CONTINUE</button>
+                </main>
+                <footer>Made by Cameron Hunt
+                    <br><a href="https://github.com/CamyH/A-Vikingr-Adventure-CYOAG" target="_blank"><img
+                            class="footer-gh-icon" src="/Image/github-icon.png"></a>
+                </footer>
+            </div>
+        </div>
+    </body>
 
 </html>

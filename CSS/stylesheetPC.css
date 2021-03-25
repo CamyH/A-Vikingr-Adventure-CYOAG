@@ -20,7 +20,7 @@ main, .name-picker-main {
 body {
     background-color: gray;
 }
-.index-content, .credits-content {
+.index-content, .ending1-content, .credits-content {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 30px 150px 30px 150px;
 }
@@ -50,7 +50,7 @@ header {
 /*
 ######################### All Buttons #########################
 */
-.play-button, .credits-button, .continue-button, .back-button, .option1-button, .option2-button, .option3-button {
+.play-button, .credits-button, .continue-button, .main-menu-button, .option1-button, .option2-button, .option3-button {
     cursor: pointer;
     display: block;
     width: 20%;
@@ -84,7 +84,7 @@ header {
 /*
 ######################### Setting Footer & Main Content Colour #########################
 */
-.index-content, .credits-content, footer {
+.index-content, ,.ending1-content, .credits-content, footer {
     background:lightgrey;
 }
 /*
