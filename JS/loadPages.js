@@ -13,6 +13,8 @@ function loadPage3b() { window.location.href = "/HTML/page3b.html"; }
 function loadPage3c() { window.location.href = "/HTML/page3c.html"; }
 // Loads Page 4
 function loadPage4() { window.location.href = "/HTML/page4.html"; }
+// Loads Page 5
+function loadPage5() { window.location.href = "/HTML/page5.html"; }
 // Loads Ending 1 
 function loadEnding1() { window.location.href = "/HTML/ending1.html"; }
 // Loads Ending 2

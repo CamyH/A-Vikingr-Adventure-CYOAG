@@ -22,7 +22,7 @@ main, .name-picker-main {
 body {
     background-color: #214252;
 }
-.index-content, .ending1-content, .credits-content {
+.content, .ending1-content, .credits-content {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 30px 150px 30px 150px;
 }
@@ -82,13 +82,16 @@ header {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px 20px 10px 20px;
 }
+.continue-button {
+    background-color: #214252;
+}
 .credits {
     text-align: center;
 }
 /*
 ######################### Setting Footer, Main Content Colour & All Buttons #########################
 */
-.index-content, .credits-content, .ending1-content, footer, button {
+.content, .credits-content, .ending1-content, footer, button {
     background:#af2d2d;
 }
 /*
@@ -121,7 +124,7 @@ header {
 /*
 ######################### ALL STORY PAGE PROPERTIES #########################
 */
-.page0-story, .page1-story, .page2-story, .page3a-story {
+.page0-story, .page1-story, .page2-story, .page3a-story, .page3b-story, .page4-story {
     padding: 20px;
 }
 
@@ -151,7 +154,7 @@ header {
 /*
 ######################### ENDING 1 PAGE #########################
 */
-.ending1-text {
+.ending1-text, .ending2-text {
     padding: 20px;
 }
 /*

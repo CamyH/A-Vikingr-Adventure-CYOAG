@@ -1,8 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head></head>
+    <head>
+        <meta charset="UTF-8">
+        <title>A Vikingr Adventure</title>
+        <!--For Widescreen devices-->
+        <link rel="stylesheet" media="screen and (min-width: 1150px)" href="/CSS/stylesheetPC.css">
+        <!--For Mobile Devices-->
+        <link rel="stylesheet" media="screen and (max-width: 1150px)" href="/CSS/stylesheetMobile.css">
+        <script src="../JS/loadPages.js"></script>
+        <script src="../JS/gameSettings.js"></script>
+        <script src="../JS/outcomes.js"></script>
+    </head>
 
-    <body></body>
+    <body>
+        <div id="page3a">
+            <div class="wrapper">
+                <header class="main-title">A Vikingr Adventure</header>
+                <main>
+                    <section class="content">
+                        <p class="page3b-story">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                            Nec tincidunt praesent semper feugiat nibh sed pulvinar.
+                            Ornare aenean euismod elementum nisi quis. Eget est lorem ipsum dolor sit amet consectetur
+                            adipiscing elit. <br>
+                            What should Sven do? Should he continue the fight or concede defeat?</p>
+                    </section>
+                    <button class="option1-button" onClick="loadPage4();">You order your men continue to fight
+                        valiantly
+                        against the Saxons.</button>
+                    &nbsp;
+                    <button class="option2-button" onClick="loadPage4();">You order your men to lay down their weapons
+                        and concede defeat to the Saxons.</button>
+                    &nbsp;
+                    <button class="main-menu-button" onClick="mainMenu();">MAIN MENU</button>
+                    &nbsp;
+                </main>
+                <footer>Made by Cameron Hunt
+                    <br><a href="https://github.com/CamyH/A-Vikingr-Adventure-CYOAG" target="_blank"><img
+                            class="footer-gh-icon" src="/Image/github-icon.png"></a>
+                </footer>
+            </div>
+        </div>
+    </body>
 
 </html>

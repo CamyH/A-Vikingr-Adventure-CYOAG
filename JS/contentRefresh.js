@@ -1,5 +1,6 @@
 /* Help Resources Used
 */
+/* Index Page */
 // Hide Main Menu Screen
 function hideMainMenu() {
     document.getElementById("main-menu").style.display = "none";
@@ -27,4 +28,14 @@ function previousContentButton() {
     document.getElementById("name-picker").style.display = "none";
     // Show Main Menu Content
     document.getElementById("main-menu").style.display = "block";
+}
+
+/* PAGE 4 */
+function refreshPage4() {
+    // May not work in older browsers, implement a fallback
+    document.getElementsByClassName("page4-story")[0].style.display = "none";
+    document.getElementsByClassName("option1-button")[0].style.display = "none";
+    // Does not work - find out why
+    document.getElementByClassName("option2-button")[0].style.display = "none";
+    document.getElementByClassName("main-menu-button")[0].style.display = "none";
 }
