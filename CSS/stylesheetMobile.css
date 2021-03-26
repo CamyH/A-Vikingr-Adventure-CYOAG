@@ -92,7 +92,7 @@ header {
 /*
 ######################### Setting Footer, Main Content, All Buttons & Ending Pages Colour #########################
 */
-.content, .credits-content, .ending1-content, .ending2-content, footer, button {
+.content, .credits-content, .ending1-content, .ending2-content, footer, button, .continue-button {
     background:#af2d2d;
 }
 /*

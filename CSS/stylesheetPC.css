@@ -22,7 +22,7 @@ main, .name-picker-main {
 body {
     background-color: #214252;
 }
-.content, .ending1-content, .credits-content {
+.content, .ending1-content, .ending2-content, .credits-content {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 30px 150px 30px 150px;
 }
@@ -91,7 +91,7 @@ header {
 /*
 ######################### Setting Footer, Main Content Colour & All Buttons #########################
 */
-.content, .credits-content, .ending1-content, footer, button {
+.content, .credits-content, .ending1-content, .ending2-content, footer, button, .continue-button {
     background:#af2d2d;
 }
 /*
