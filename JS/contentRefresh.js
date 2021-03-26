@@ -1,4 +1,5 @@
 /* Help Resources Used
+https://www.w3schools.com/jsref/jsref_concat_string.asp
 */
 /* Index Page */
 // Hide Main Menu Screen
@@ -32,10 +33,17 @@ function previousContentButton() {
 
 /* PAGE 4 */
 function refreshPage4() {
-    // May not work in older browsers, implement a fallback
-    document.getElementsByClassName("page4-story")[0].style.display = "none";
-    document.getElementsByClassName("option1-button")[0].style.display = "none";
-    // Does not work - find out why
-    document.getElementByClassName("option2-button")[0].style.display = "none";
-    document.getElementByClassName("main-menu-button")[0].style.display = "none";
+    document.getElementById("page4").style.display = "none";
+    document.getElementById("alternate-choice").style.display = "block";
+    loadNewContent();
+}
+
+function loadNewContent() {
+    //var name = sessionStorage.getItem("playerName");
+    // Error just now
+    var name = "Sven";
+    var text = " tries to pick the lock on his shackles with the nail he found, to no avail. Instead ";
+    var text2 = " attracts the attention of the guard with the key ring.";
+    var message = name.concat(text).concat(name).concat(text2);
+    document.getElementById("page4-alternate").innerHTML = message;
 }

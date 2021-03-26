@@ -152,6 +152,13 @@ header {
 */
 
 /*
+######################### STORY PAGE 4 #########################
+*/
+#alternate-choice {
+    display: none;
+}
+
+/*
 ######################### ENDING 1 PAGE #########################
 */
 .ending1-text, .ending2-text {

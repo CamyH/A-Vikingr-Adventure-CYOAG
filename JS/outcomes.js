@@ -29,8 +29,7 @@ function consequence2Index() {
     // Hide other consequence text element
     document.getElementById("consequence1").style.display = "none";
     // Add message to p element
-    var message;
-    message = "Saving the food has caused the crew’s morale to decrease.";
+    var message = "Saving the food has caused the crew’s morale to decrease.";
     sessionStorage.setItem("consequence2", message);
     document.getElementById("consequence2").innerHTML = message;
 }
