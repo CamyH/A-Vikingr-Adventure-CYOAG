@@ -73,8 +73,8 @@ function consequence2Page1() {
 
 // Continue Buttons
 function continueButtonIndex() {
-    window.location.href = "../HTML/page1.html";
+    window.location.href = "HTML/page1.html";
 }
 function continueButtonPage1() {
-    window.location.href = "../HTML/page2.html";
+    window.location.href = "page2.html";
 }
