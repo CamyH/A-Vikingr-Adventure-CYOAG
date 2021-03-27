@@ -37,7 +37,6 @@ function refreshPage4() {
     document.getElementById("alternate-choice").style.display = "block";
     loadNewContent();
 }
-
 function loadNewContent() {
     //var name = sessionStorage.getItem("playerName");
     // Error just now

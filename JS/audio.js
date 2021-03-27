@@ -9,15 +9,17 @@ const AudioContext = window.AudioContext || window.webKitAudioContext;
 const audioContext = new AudioContext();
 
 // Get audio element
-const audioElement = document.querySelector('audio');
+const audioElement = new Audio("../Audio/sword_sound_1.mp3");
 
 // Pass into audio context
 const track = audioContext.createMediaElementSource(audioElement);
 
 track.connect(audioContext.destination);
 
+audioContext.resume();
+
 // select our play button
-const playButton = document.querySelector('#button2');
+const playButton = document.querySelector('button');
 
 playButton.addEventListener('click', function () {
 
@@ -40,3 +42,15 @@ playButton.addEventListener('click', function () {
 audioElement.addEventListener('ended', () => {
     playButton.dataset.playing = 'false';
 }, false);
+
+/*
+function play() {
+    const audioContext = new AudioContext();
+    const audio = new Audio("../Audio/sword_sound_1.mp3");
+
+    const source = audioContext.createMediaElementSource(audio);
+    source.connect(audioContext.destination);
+    audio.play();
+}
+
+*/
