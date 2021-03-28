@@ -3,7 +3,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_A
 https://www.zapsplat.com/sound-effect-category/swords/page/6/
 */
 
-// legacy browser support
+// Legacy browser support
 const AudioContext = window.AudioContext || window.webKitAudioContext;
 
 const audioContext = new AudioContext();
@@ -16,21 +16,21 @@ const track = audioContext.createMediaElementSource(audioElement);
 
 track.connect(audioContext.destination);
 
-audioContext.resume();
+// Select Play button
+const playButton = document.querySelector(".btn");
 
-// select our play button
-const playButton = document.querySelector('button');
-
+// Add event listener to execute function on click
 playButton.addEventListener('click', function () {
 
-    // check if context is in suspended state (autoplay policy)
+    // Check if the context is in a suspended state as per autoplay policy
     if (audioContext.state === 'suspended') {
         audioContext.resume();
     }
 
-    // play or pause track depending on state
+    // Play or Pause the track depending on the state
     if (this.dataset.playing === 'false') {
         audioElement.play();
+        audioElement.volume = 0.2;
         this.dataset.playing = 'true';
     } else if (this.dataset.playing === 'true') {
         audioElement.pause();
@@ -39,18 +39,7 @@ playButton.addEventListener('click', function () {
 
 }, false);
 
+// When audio has ended set playing to false
 audioElement.addEventListener('ended', () => {
     playButton.dataset.playing = 'false';
 }, false);
-
-/*
-function play() {
-    const audioContext = new AudioContext();
-    const audio = new Audio("../Audio/sword_sound_1.mp3");
-
-    const source = audioContext.createMediaElementSource(audio);
-    source.connect(audioContext.destination);
-    audio.play();
-}
-
-*/
