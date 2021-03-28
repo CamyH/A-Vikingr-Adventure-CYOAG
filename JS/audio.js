@@ -12,7 +12,7 @@ const audioContext = new AudioContext();
 const swordSound = new Audio("../Audio/sword_sound_1.mp3");
 const arrowSound = new Audio("../Audio/arrow_sound_1.mp3");
 
-// Pass into audio context
+// Pass sound effects into audio context
 const effect1 = audioContext.createMediaElementSource(swordSound);
 const effect2 = audioContext.createMediaElementSource(arrowSound);
 
@@ -44,7 +44,7 @@ playButtonSword.addEventListener('click', function () {
 
 }, false);
 
-// When sword audio has ended set playing to
+// When sword sound effect has ended set playing to
 arrowSound.addEventListener('ended', () => {
     playButtonSword.dataset.playing = 'false';
 }, false);
@@ -70,7 +70,7 @@ playButtonArrow.addEventListener('click', function () {
 
 }, false);
 
-// When sword audio has ended set playing to
+// When arrow sound effect has ended set playing to
 arrowSound.addEventListener('ended', () => {
     playButtonSword.dataset.playing = 'false';
 }, false);
