@@ -34,10 +34,13 @@
                             Sven decides that we will attack these soldiers and find out who they are and where in
                             England they have landed. How should you attack this camp?</p>
                     </section>
-                    <button class="option1-button" onClick="option1Page1();">Fire a volley of arrows into the camp
+                    <button class="option1-button" onClick="option1Page1();" data-playing="false" role="switch"
+                        aria-checked="false">Fire a volley of arrows into
+                        the camp
                         and rush in to mop up any remaining soldiers.</button>
                     &nbsp;
-                    <button class="option2-button" onClick="option2Page1();">Rush into the camp and take the soldiers
+                    <button class="option2-button" onClick="option2Page1();" data-playing="false" role="switch"
+                        aria-checked="false">Rush into the camp and take the soldiers
                         by surprise.</button>
                     &nbsp;
                     <button class="main-menu-button" onClick="mainMenu();">MAIN MENU</button>
@@ -56,9 +59,6 @@
                 <header class="main-title">A Vikingr Adventure</header>
                 <main>
                     <section class="content">
-                        <button class="btn" data-playing="false" role="switch" aria-checked="false">
-                            <span>Play/Pause</span>
-                        </button>
                         <!--Outcome Messages-->
                         <p id="consequence1"></p>
                         <p id="consequence2"></p>
@@ -75,7 +75,7 @@
                 </footer>
             </div>
         </div>
-        <script src="JS/audio.js"></script>
+        <script src="../JS/audio.js"></script>
     </body>
 
 </html>
