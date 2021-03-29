@@ -55,7 +55,7 @@ header {
 /*
 ######################### All Buttons #########################
 */
-.play-button, .credits-button, .continue-button, .main-menu-button, .option1-button, .option2-button, .option3-button {
+.play-button, .credits-button, .continue-button, .main-menu-button, .option1-button, .option2-button, .option3-button, .load-button {
     cursor: pointer;
     display: block;
     width: 20%;
@@ -176,6 +176,22 @@ header {
 ######################### ENDING 2 PAGE #########################
 */
 
+/*
+######################### Load Games Overlay #########################
+*/
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    cursor: pointer;
+}
 /*
 ######################### PLAYTHROUGH STATS PAGE #########################
 */

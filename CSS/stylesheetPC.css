@@ -54,7 +54,7 @@ header {
 /*
 ######################### All Buttons #########################
 */
-.play-button, .credits-button, .continue-button, .main-menu-button, .option1-button, .option2-button, .option3-button {
+.play-button, .credits-button, .continue-button, .main-menu-button, .option1-button, .option2-button, .option3-button, .load-button {
     cursor: pointer;
     display: block;
     width: 20%;

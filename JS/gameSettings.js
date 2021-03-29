@@ -17,3 +17,7 @@ function getName() {
     sessionStorage.setItem("playerName", name);
     //alert(sessionStorage.getItem("playerName"));
 }
+
+function loadGame() {
+    document.getElementById("overlay").style.display = "block";
+}
