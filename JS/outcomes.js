@@ -56,6 +56,8 @@ function consequence1Page1() {
     // Add message to p element
     var message;
     message = "This was the safest option and results in killing all but one soldier who you strike down when entering the camp.";
+    messageAlt = "You chose to fire a volley of arrows into the camp before rushing in to kill any remaining Saxon soldiers.";
+    sessionStorage.setItem("consequence3", messageAlt)
     document.getElementById("consequence1").innerHTML = message;
 }
 
@@ -68,6 +70,8 @@ function consequence2Page1() {
     // Add message to p element
     var message;
     message = "This option was the bloodiest. The soldiers are alerted to your presence from the Viking war cry and quickly pick-up arms. You win the short battle but lose three of your men as a result. There is now growing up rest among your men. ";
+    messageAlt = "You chose to rush into the camp and take the Saxon soldiers by surprise resulting in the loss of three of your men.";
+    sessionStorage.setItem("consequence4", messageAlt)
     document.getElementById("consequence2").innerHTML = message;
 }
 
