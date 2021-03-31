@@ -55,7 +55,7 @@ header {
 /*
 ######################### All Buttons #########################
 */
-.play-button, .credits-button, .continue-button, .main-menu-button, .option1-button, .option2-button, .option3-button, .load-button {
+button {
     cursor: pointer;
     display: block;
     width: 20%;
@@ -85,6 +85,14 @@ header {
 }
 .continue-button {
     background-color: #214252;
+}
+#close-button {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .credits {
     text-align: center;
