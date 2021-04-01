@@ -39,18 +39,20 @@ function closeLoadGameMenu() {
 
 function saveCheck() {
     var overlay = document.getElementById("overlay");
-    localStorage.setItem("1", "data1");
-    localStorage.setItem("2", "data2");
+    // localStorage.setItem("1", "data1");
+    // localStorage.setItem("2", "data2");
     // Guard clause // If no save games found, error message displayed and function does not continue
-    if (localStorage.getItem(0) == null) {
+    if (localStorage.getItem(1) == null) {
         closeLoadGameMenu();
         return alert("No save games found.");
     }
 
-    for (var i = 0; i < localStorage.length - 1; i++) {
+    for (var i = 1; i < localStorage.length; i++) {
+        var breakPoint = document.createElement("br");
         var button = document.createElement("button");
         button.innerText = localStorage.getItem(i);
         overlay.appendChild(button);
+        overlay.appendChild(breakPoint);
         //https://stackoverflow.com/questions/49820106/add-a-button-using-javascript-to-an-existing-div
         //https://stackoverflow.com/questions/5410745/how-can-i-get-a-list-of-the-items-stored-in-html-5-local-storage-from-javascript/5410827
     }
