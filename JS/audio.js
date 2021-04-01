@@ -11,17 +11,21 @@ const audioContext = new AudioContext();
 // Get sound effects
 const swordSound = new Audio("../Audio/sword_sound_1.mp3");
 const arrowSound = new Audio("../Audio/arrow_sound_1.mp3");
+const oceanSound = new Audio("../Audio/ocean_sound.mp3");
 
 // Pass sound effects into audio context
 const effect1 = audioContext.createMediaElementSource(swordSound);
 const effect2 = audioContext.createMediaElementSource(arrowSound);
+const effect3 = audioContext.createMediaElementSource(oceanSound);
 
 effect1.connect(audioContext.destination);
 effect2.connect(audioContext.destination);
+effect3.connect(audioContext.destination);
 
 // Select Play buttons
 const playButtonSword = document.querySelector(".option2-button");
 const playButtonArrow = document.querySelector(".option1-button");
+const playButtonOcean = document.querySelector("#index-continue");
 
 // Add event listener to execute function on click
 playButtonSword.addEventListener('click', function () {
@@ -64,7 +68,7 @@ playButtonArrow.addEventListener('click', function () {
         arrowSound.play();
         this.dataset.playing = 'true';
     } else if (this.dataset.playing === 'true') {
-        swordSound.pause();
+        arrowSound.pause();
         this.dataset.playing = 'false';
     }
 
@@ -72,5 +76,31 @@ playButtonArrow.addEventListener('click', function () {
 
 // When arrow sound effect has ended set playing to
 arrowSound.addEventListener('ended', () => {
-    playButtonSword.dataset.playing = 'false';
+    playButtonArrow.dataset.playing = 'false';
+}, false);
+
+// Add event listener to execute function on click
+playButtonOcean.addEventListener('click', function () {
+
+    // Check if the context is in a suspended state as per autoplay policy
+    if (audioContext.state === 'suspended') {
+        oceanSound.volume = 0.1;
+        audioContext.resume();
+    }
+
+    // Play or Pause the sound effect depending on the state
+    if (this.dataset.playing === 'false') {
+        oceanSound.volume = 0.1;
+        oceanSound.play();
+        this.dataset.playing = 'true';
+    } else if (this.dataset.playing === 'true') {
+        oceanSound.pause();
+        this.dataset.playing = 'false';
+    }
+
+}, false);
+
+// When ocean sound effect has ended set playing to
+oceanSound.addEventListener('ended', () => {
+    playButtonOcean.dataset.playing = 'false';
 }, false);
