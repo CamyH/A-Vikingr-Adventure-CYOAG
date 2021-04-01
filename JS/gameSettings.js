@@ -3,6 +3,12 @@ https://stackoverflow.com/questions/8832375/how-to-get-selected-value-from-dropd
 https://stackoverflow.com/questions/49820106/add-a-button-using-javascript-to-an-existing-div
 https://stackoverflow.com/questions/5410745/how-can-i-get-a-list-of-the-items-stored-in-html-5-local-storage-from-javascript/5410827
 */
+// Clear session storage
+function restartGame() {
+    //https://www.tutorialsteacher.com/codeeditor?cid=js-2
+    sessionStorage.clear();
+}
+
 // Set initial soldiers
 var soliders = 118;
 function loseSoldiers() {
