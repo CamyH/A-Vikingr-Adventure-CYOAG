@@ -11,7 +11,7 @@ const audioContext = new AudioContext();
 // Get sound effects
 const swordSound = new Audio("../Audio/sword_sound_1.mp3");
 const arrowSound = new Audio("../Audio/arrow_sound_1.mp3");
-const oceanSound = new Audio("../Audio/ocean_sound.mp3");
+const oceanSound = new Audio("../Audio/ocean_sound_edit.mp3");
 
 // Pass sound effects into audio context
 const effect1 = audioContext.createMediaElementSource(swordSound);
@@ -25,7 +25,7 @@ effect3.connect(audioContext.destination);
 // Select Play buttons
 const playButtonSword = document.querySelector(".option2-button");
 const playButtonArrow = document.querySelector(".option1-button");
-const playButtonOcean = document.querySelector("#index-continue");
+const playButtonOcean = document.querySelector(".continue-button-index");
 
 // Add event listener to execute function on click
 playButtonSword.addEventListener('click', function () {
@@ -49,9 +49,11 @@ playButtonSword.addEventListener('click', function () {
 }, false);
 
 // When sword sound effect has ended set playing to
-arrowSound.addEventListener('ended', () => {
+swordSound.addEventListener('ended', () => {
     playButtonSword.dataset.playing = 'false';
 }, false);
+
+////////////////////////////////////////////////////////////////////////////////
 
 // Add event listener to execute function on click
 playButtonArrow.addEventListener('click', function () {
@@ -79,6 +81,8 @@ arrowSound.addEventListener('ended', () => {
     playButtonArrow.dataset.playing = 'false';
 }, false);
 
+////////////////////////////////////////////////////////////////////////////////
+
 // Add event listener to execute function on click
 playButtonOcean.addEventListener('click', function () {
 
@@ -100,7 +104,7 @@ playButtonOcean.addEventListener('click', function () {
 
 }, false);
 
-// When ocean sound effect has ended set playing to
+// When sword sound effect has ended set playing to
 oceanSound.addEventListener('ended', () => {
     playButtonOcean.dataset.playing = 'false';
 }, false);
