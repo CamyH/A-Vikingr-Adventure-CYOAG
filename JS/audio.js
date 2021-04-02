@@ -86,7 +86,7 @@ arrowSound.addEventListener('ended', () => {
 }, false);
 
 ////////////////////////////////////////////////////////////////////////////////
-// Currently not used/working
+
 // Add event listener to execute function on click
 playButtonOcean.addEventListener('click', function () {
 
@@ -114,7 +114,7 @@ oceanSound.addEventListener('ended', () => {
 }, false);
 
 ////////////////////////////////////////////////////////////////////////////////
-
+// Currently not used/working
 // Add event listener to execute function on click
 playButtonWarCry.addEventListener('click', function () {
 

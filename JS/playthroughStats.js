@@ -8,6 +8,7 @@ window.onload = function stats() {
     page0Stats();
     page1Stats();
     page2Stats();
+    page3aStats();
 }
 
 function page0Stats() {
@@ -35,6 +36,7 @@ function page1Stats() {
 }
 
 function page2Stats() {
+    // Page 2
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page2");
     if (message != null)
@@ -43,6 +45,20 @@ function page2Stats() {
         div.innerHTML += message + "<br>";
     } else {
         message = sessionStorage.getItem("option3Page2");
+        div.innerHTML += message + "<br>";
+    }
+}
+
+function page3aStats() {
+    // Page 3a
+    var div = document.getElementById("stats");
+    var message = sessionStorage.getItem("option1Page3a");
+    if (message != null)
+        div.innerHTML += message + "<br>";
+    else if (message = sessionStorage.getItem("option2Page3a") != null) {
+        div.innerHTML += message + "<br>";
+    } else {
+        message = sessionStorage.getItem("option3Page3a");
         div.innerHTML += message + "<br>";
     }
 }

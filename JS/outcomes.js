@@ -87,6 +87,21 @@ function option3Page2() {
     var message = "You chose to attempt a head on surprise attack of the Fort, the true Viking way.";
     sessionStorage.setItem("option3Page2", message);
 }
+
+/*OUTCOMES FOR PAGE3a*/
+function option1Page3a() {
+    var message = "You chose to let the Saxon prisoners free.";
+    sessionStorage.setItem("option1Page3a", message);
+}
+function option2Page3a() {
+    var message = "You chose to offer the Saxon’s the chance to join your band of warriors or be imprisoned for life.";
+    sessionStorage.setItem("option2Page3a", message);
+}
+function option3Page3a() {
+    var message = "You ordered your men to kill all the Saxon prisoners.";
+    sessionStorage.setItem("option3Page3a", message);
+}
+
 // Continue Buttons
 function continueButtonIndex() {
     window.location.href = "HTML/page1.html";
