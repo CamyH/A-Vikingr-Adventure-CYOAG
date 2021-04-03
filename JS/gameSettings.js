@@ -50,6 +50,7 @@ function saveCheck() {
     for (var i = 1; i < localStorage.length; i++) {
         var breakPoint = document.createElement("br");
         var button = document.createElement("button");
+        button.setAttribute("id", "save-game-button");
         button.innerText = localStorage.getItem(i);
         overlay.appendChild(button);
         overlay.appendChild(breakPoint);
