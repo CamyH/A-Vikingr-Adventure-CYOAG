@@ -17,6 +17,7 @@ function loseSoldiers() {
 
 // Get chosen name
 function getName() {
+    // Clear previous name, if there is one
     let index = document.getElementById("names-list").selectedIndex;
     // Name Variable stores chosen name of character
     let name = document.getElementById("names-list").options[index].text;

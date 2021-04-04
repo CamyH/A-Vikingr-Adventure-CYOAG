@@ -20,6 +20,14 @@ function hideNamePicker() {
 // Show Page 1 of the story
 function showPage1() {
     document.getElementById("page0").style.display = "block";
+    showMessage();
+}
+function showMessage() {
+    var playerName = sessionStorage.getItem("playerName");
+    var paragraph = document.getElementById("message");
+    paragraph.textContent += "What should " + playerName + " do? Should he divide up their remaining food and give it to the crew or save it for later?";
+    // var textNode = document.createTextNode();
+    // paragraph.appendChild(textNode);
 }
 /*Only used for Index Page
 If user wants to go back to the main menu from the name picker content.

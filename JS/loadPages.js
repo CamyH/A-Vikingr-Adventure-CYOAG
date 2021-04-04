@@ -2,7 +2,10 @@
 https://developer.mozilla.org/en-US/docs/Web/API/Window/location
 */
 // Loads Main Menu
-function mainMenu() { window.location.href = "../index.html"; }
+function mainMenu() {
+    window.location.href = "../index.html";
+    //sessionStorage.clear();
+}
 // Loads Credits Page
 function creditsPage() { window.location.href = "HTML/credits.html"; }
 // Loads Page 3A
