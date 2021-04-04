@@ -102,6 +102,16 @@ function option3Page3a() {
     sessionStorage.setItem("option3Page3a", message);
 }
 
+/*OUTCOMES FOR PAGE3b*/
+function option1Page3b() {
+    var message = "You ordered your men continue to fight valiantly against the Saxons.";
+    sessionStorage.setItem("option1Page3b", message);
+}
+function option1Page3b() {
+    var message = "You ordered your men to lay down their weapons and concede defeat to the Saxons.";
+    sessionStorage.setItem("option2Page3b", message);
+}
+
 // Continue Buttons
 function continueButtonIndex() {
     window.location.href = "HTML/page1.html";

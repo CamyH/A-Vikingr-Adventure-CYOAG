@@ -9,6 +9,7 @@ window.onload = function stats() {
     page1Stats();
     page2Stats();
     page3aStats();
+    page3bStats();
 }
 
 function page0Stats() {
@@ -59,6 +60,18 @@ function page3aStats() {
         div.innerHTML += message + "<br>";
     } else {
         message = sessionStorage.getItem("option3Page3a");
+        div.innerHTML += message + "<br>";
+    }
+}
+
+function page3bStats() {
+    // Page 3b
+    var div = document.getElementById("stats");
+    var message = sessionStorage.getItem("option1Page3b");
+    if (message != null)
+        div.innerHTML += message + "<br>";
+    else {
+        message = sessionStorage.getItem("option2Page3b")
         div.innerHTML += message + "<br>";
     }
 }
