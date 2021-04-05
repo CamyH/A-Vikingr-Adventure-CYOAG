@@ -22,7 +22,12 @@ function showPage1() {
     document.getElementById("page0").style.display = "block";
     showMessage();
 }
+function resetText() {
+    var paragraph = document.getElementById("message");
+    paragraph.textContent += "";
+}
 function showMessage() {
+    // Bug - names are delayed - function is loaded straight away so need to figure out how to delay it, otherwise the name is always one behind.
     var playerName = sessionStorage.getItem("playerName");
     var paragraph = document.getElementById("message");
     paragraph.textContent += "What should " + playerName + " do? Should he divide up their remaining food and give it to the crew or save it for later?";
