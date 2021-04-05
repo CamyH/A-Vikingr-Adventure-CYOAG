@@ -9,12 +9,6 @@ function restartGame() {
     sessionStorage.clear();
 }
 
-// Set initial soldiers
-var soliders = 118;
-function loseSoldiers() {
-    soldiers -= 2;
-}
-
 // Get chosen name
 function getName() {
     // Clear previous name, if there is one
