@@ -19,7 +19,7 @@ function getName() {
 
     // Session storage to store player's name
     sessionStorage.setItem("playerName", name);
-    //alert(sessionStorage.getItem("playerName"));
+    alert(sessionStorage.getItem("playerName"));
 }
 
 // Save Games
