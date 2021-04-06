@@ -1,6 +1,7 @@
 /* Help Resources Used
 https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API
 https://www.zapsplat.com/sound-effect-category/swords/page/6/
+https://stackoverflow.com/questions/17970734/how-to-call-window-load-event-on-specific-page
 */
 
 // Legacy browser support
@@ -30,6 +31,15 @@ const playButtonSword = document.querySelector(".option2-button");
 const playButtonArrow = document.querySelector(".option1-button");
 const playButtonOcean = document.querySelector(".continue-button-index");
 const playButtonWarCry = document.querySelector(".option3-button");
+
+////////////////////////////////////////////////////////////////////////////////
+// Different method of playing the audio - need it to be played when a specific page is loaded, having it run on button click is not possible in this case.
+if (window.location.href.match("page3c.html") != null) {
+    warCrySound.volume = 0.2;
+    warCrySound.play();
+}
+
+////////////////////////////////////////////////////////////////////////////////
 
 // Add event listener to execute function on click
 playButtonSword.addEventListener('click', function () {
@@ -111,32 +121,4 @@ playButtonOcean.addEventListener('click', function () {
 // When sword sound effect has ended set playing to false
 oceanSound.addEventListener('ended', () => {
     playButtonOcean.dataset.playing = 'false';
-}, false);
-
-////////////////////////////////////////////////////////////////////////////////
-// Currently not used/working
-// Add event listener to execute function on click
-playButtonWarCry.addEventListener('click', function () {
-
-    // Check if the context is in a suspended state as per autoplay policy
-    if (audioContext.state === 'suspended') {
-        warCrySound.volume = 0.1;
-        audioContext.resume();
-    }
-
-    // Play or Pause the sound effect depending on the state
-    if (this.dataset.playing === 'false') {
-        warCrySound.volume = 0.1;
-        warCrySound.play();
-        this.dataset.playing = 'true';
-    } else if (this.dataset.playing === 'true') {
-        warCrySound.pause();
-        this.dataset.playing = 'false';
-    }
-
-}, false);
-
-// When war cry sound effect has ended set playing to false
-warCrySound.addEventListener('ended', () => {
-    playButtonWarCry.dataset.playing = 'false';
 }, false);
