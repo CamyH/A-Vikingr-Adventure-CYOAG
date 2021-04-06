@@ -30,9 +30,9 @@ effect4.connect(audioContext.destination);
 const playButtonSword = document.querySelector(".option2-button");
 const playButtonArrow = document.querySelector(".option1-button");
 const playButtonOcean = document.querySelector(".continue-button-index");
-const playButtonWarCry = document.querySelector(".option3-button");
 
 ////////////////////////////////////////////////////////////////////////////////
+// Page3C Audio
 // Different method of playing the audio - need it to be played when a specific page is loaded, having it run on button click is not possible in this case.
 if (window.location.href.match("page3c.html") != null) {
     warCrySound.volume = 0.2;
