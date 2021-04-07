@@ -34,7 +34,7 @@ function consequence2Index() {
     document.getElementById("consequence2").innerHTML = message;
 }
 
-/*OUTCOMES FOR PAGE1*/
+/* OUTCOMES FOR PAGE1 */
 
 // Hides Page1 content and calls correct consequence function
 function option1Page1() {
@@ -73,7 +73,7 @@ function consequence2Page1() {
     document.getElementById("consequence2").innerHTML = message;
 }
 
-/*OUTCOMES FOR PAGE 2*/
+/* OUTCOMES FOR PAGE 2 */
 // Storing all options to be displayed on playthrough stats page
 function option1Page2() {
     var message = "You chose to split your men into two groups and launch a sneak attack from two sides of the Fort.";
@@ -88,7 +88,7 @@ function option3Page2() {
     sessionStorage.setItem("option3Page2", message);
 }
 
-/*OUTCOMES FOR PAGE3a*/
+/* OUTCOMES FOR PAGE3a */
 function option1Page3a() {
     var message = "You chose to let the Saxon prisoners free.";
     sessionStorage.setItem("option1Page3a", message);
@@ -102,17 +102,27 @@ function option3Page3a() {
     sessionStorage.setItem("option3Page3a", message);
 }
 
-/*OUTCOMES FOR PAGE3b*/
+/* OUTCOMES FOR PAGE3b */
 function option1Page3b() {
     var message = "You ordered your men continue to fight valiantly against the Saxons.";
     sessionStorage.setItem("option1Page3b", message);
 }
-function option1Page3b() {
+function option2Page3b() {
     var message = "You ordered your men to lay down their weapons and concede defeat to the Saxons.";
     sessionStorage.setItem("option2Page3b", message);
 }
 
-// Continue Buttons
+/* OUTCOMES FOR PAGE4 */
+function option1Page4() {
+    var message = "You were able to attract the attention of the guard who had the key ring.";
+    sessionStorage.setItem("option1Page4", message);
+}
+function option2Page4() {
+    var message = "You tried and failed to pick the lock of your shackles. You ended up attracting the attention of the guard with the key ring.";
+    sessionStorage.setItem("option2Page4", message);
+}
+
+/* Continue Buttons */
 function continueButtonIndex() {
     window.location.href = "HTML/page1.html";
 }

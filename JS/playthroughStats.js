@@ -9,6 +9,7 @@ window.onload = function stats() {
     page2Stats();
     page3aStats();
     page3bStats();
+    page4Stats();
 }
 
 function page0Stats() {
@@ -52,7 +53,7 @@ function page2Stats() {
 function page3aStats() {
     // Page 3a
     // Guard Clause - do not display stats if player has not picked this option
-    if (sessionStorage.getItem("option1Page3a") == null)
+    if (sessionStorage.getItem("option1Page3a") == null || sessionStorage.getItem("option2Page3a") == null || sessionStorage.getItem("option3Page3a") == null)
         return;
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page3a");
@@ -69,7 +70,7 @@ function page3aStats() {
 function page3bStats() {
     // Page 3b
     // Guard Clause - do not display stats if player has not picked this option
-    if (sessionStorage.getItem("option1Page3b") == null)
+    if (sessionStorage.getItem("option1Page3b") == null || sessionStorage.getItem("option2Page3b") == null || sessionStorage.getItem("option3Page3b") == null)
         return;
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page3b");
@@ -77,6 +78,18 @@ function page3bStats() {
         div.innerHTML += message + "<br>";
     else {
         message = sessionStorage.getItem("option2Page3b")
+        div.innerHTML += message + "<br>";
+    }
+}
+
+function page4Stats() {
+    // Page 4
+    var div = document.getElementById("stats");
+    var message = sessionStorage.getItem("option1Page4");
+    if (message != null)
+        div.innerHTML += message + "<br>";
+    else {
+        message = sessionStorage.getItem("option2Page4");
         div.innerHTML += message + "<br>";
     }
 }
