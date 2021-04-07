@@ -1,5 +1,4 @@
 /*Help Resources Used
-
 */
 
 // Playthrough Stats Page
@@ -52,6 +51,9 @@ function page2Stats() {
 
 function page3aStats() {
     // Page 3a
+    // Guard Clause - do not display stats if player has not picked this option
+    if (sessionStorage.getItem("option1Page3a") == null)
+        return;
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page3a");
     if (message != null)
@@ -66,6 +68,9 @@ function page3aStats() {
 
 function page3bStats() {
     // Page 3b
+    // Guard Clause - do not display stats if player has not picked this option
+    if (sessionStorage.getItem("option1Page3b") == null)
+        return;
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page3b");
     if (message != null)
