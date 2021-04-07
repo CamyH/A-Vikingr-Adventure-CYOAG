@@ -16,6 +16,23 @@ body, html {
     margin:0;
     padding:0;
 }
+/* Only for body of Index Page */
+#body-index {
+    /* Safari, Chrome and Opera > 12.1 */
+    -webkit-animation: fadein 1s; 
+    /* Firefox < 16 */
+    -moz-animation: fadein 1s; 
+    /* Internet Explorer */
+     -ms-animation: fadein 1s; 
+     /* Opera < 12.1 */
+      -o-animation: fadein 1s; 
+      /* Default */
+         animation: fadein 1s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 main, .name-picker-main {
     flex-grow: 1;
 }
