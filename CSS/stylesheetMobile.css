@@ -173,7 +173,7 @@ button {
 /*
 ######################### OUTCOMES PAGES #########################
 */
-#outcomes-index, #outcomes-page1 {
+#outcomes-index, #outcomes-page1, #outcomes-page3b {
     display: none;
 }
 #consequence1, #consequence2 { padding-top: 10px; }

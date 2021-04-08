@@ -70,14 +70,14 @@ function page3aStats() {
 function page3bStats() {
     // Page 3b
     // Guard Clause - do not display stats if player has not picked this option
-    if (sessionStorage.getItem("option1Page3b") == null || sessionStorage.getItem("option2Page3b") == null || sessionStorage.getItem("option3Page3b") == null)
+    if (sessionStorage.getItem("consequence11") == null || sessionStorage.getItem("consequence12") == null)
         return;
     var div = document.getElementById("stats");
-    var message = sessionStorage.getItem("option1Page3b");
+    var message = sessionStorage.getItem("consequence11");
     if (message != null)
         div.innerHTML += message + "<br>";
     else {
-        message = sessionStorage.getItem("option2Page3b")
+        message = sessionStorage.getItem("consequence12")
         div.innerHTML += message + "<br>";
     }
 }

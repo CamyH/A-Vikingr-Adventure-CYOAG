@@ -17,8 +17,7 @@ function consequence1Index() {
     // Hide other consequence text element
     document.getElementById("consequence2").style.display = "none";
     // Add message to p element
-    var message;
-    message = "Dividing up the remaining food has given a morale boost to the crew and they will fight better.";
+    var message = "Dividing up the remaining food has given a morale boost to the crew and they will fight better.";
     sessionStorage.setItem("consequence1", message);
     document.getElementById("consequence1").innerHTML = message;
 }
@@ -39,37 +38,37 @@ function consequence2Index() {
 // Hides Page1 content and calls correct consequence function
 function option1Page1() {
     document.getElementById("page1").style.display = "none";
-    consequence1Page1();
+    var message = "You chose to fire a volley of arrows into the camp before rushing in to kill any remaining Saxon soldiers.";
+    sessionStorage.setItem("consequence3", message)
+    consequence3Page1();
 }
 // Hides Page1 content and calls correct consequence function
 function option2Page1() {
     document.getElementById("page1").style.display = "none";
-    consequence2Page1();
+    var message = "You chose to rush into the camp and take the Saxon soldiers by surprise resulting in the loss of three of your men.";
+    sessionStorage.setItem("consequence4", message)
+    consequence4Page1();
 }
 
-// Adds consequence1 message
-function consequence1Page1() {
+// Adds consequence3 message
+function consequence3Page1() {
     // Show outcomes section
     document.getElementById("outcomes-page1").style.display = "block";
     // Hide other consequence text element
     document.getElementById("consequence2").style.display = "none";
     // Add message to p element
     var message = "This was the safest option and results in killing all but one soldier who you strike down when entering the camp.";
-    messageAlt = "You chose to fire a volley of arrows into the camp before rushing in to kill any remaining Saxon soldiers.";
-    sessionStorage.setItem("consequence3", messageAlt)
     document.getElementById("consequence1").innerHTML = message;
 }
 
-// Adds consequence1 message
-function consequence2Page1() {
+// Adds consequence4 message
+function consequence4Page1() {
     // Show outcomes section
     document.getElementById("outcomes-page1").style.display = "block";
     // Hide other consequence text element
     document.getElementById("consequence1").style.display = "none";
     // Add message to p element
     var message = "This option was the bloodiest. The soldiers are alerted to your presence from the Viking war cry and quickly pick-up arms. You win the short battle but lose three of your men as a result. There is now growing up rest among your men. ";
-    messageAlt = "You chose to rush into the camp and take the Saxon soldiers by surprise resulting in the loss of three of your men.";
-    sessionStorage.setItem("consequence4", messageAlt)
     document.getElementById("consequence2").innerHTML = message;
 }
 
@@ -106,10 +105,34 @@ function option3Page3a() {
 function option1Page3b() {
     var message = "You ordered your men continue to fight valiantly against the Saxons.";
     sessionStorage.setItem("option1Page3b", message);
+    consequence11Page3b();
 }
 function option2Page3b() {
     var message = "You ordered your men to lay down their weapons and concede defeat to the Saxons.";
     sessionStorage.setItem("option2Page3b", message);
+    consequence12Page3b();
+}
+
+// Adds consequence11 message
+function consequence11Page3b() {
+    // Show outcomes section
+    document.getElementById("outcomes-page3b").style.display = "block";
+    // Hide other consequence text element
+    document.getElementById("consequence1").style.display = "none";
+    // Add message to p element
+    var message = "This was the safest option and results in killing all but one soldier who you strike down when entering the camp.";
+    document.getElementById("consequence1").innerHTML = message;
+}
+
+// Adds consequence12 message
+function consequence12Page3b() {
+    // Show outcomes section
+    document.getElementById("outcomes-page3b").style.display = "block";
+    // Hide other consequence text element
+    document.getElementById("consequence2").style.display = "none";
+    // Add message to p element
+    var message = "This option was the bloodiest. The soldiers are alerted to your presence from the Viking war cry and quickly pick-up arms. You win the short battle but lose three of your men as a result. There is now growing up rest among your men. ";
+    document.getElementById("consequence2").innerHTML = message;
 }
 
 /* OUTCOMES FOR PAGE4 */
