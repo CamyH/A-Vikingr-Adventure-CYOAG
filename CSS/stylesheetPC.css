@@ -186,7 +186,12 @@ button {
 #alternate-choice {
     display: none;
 }
-
+/*
+######################### STORY PAGE 5 #########################
+*/
+#page5-continued {
+    display: none;
+}
 /*
 ######################### ENDING 1 PAGE #########################
 */

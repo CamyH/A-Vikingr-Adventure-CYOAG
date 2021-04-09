@@ -193,6 +193,12 @@ button {
     display: none;
 }
 /*
+######################### STORY PAGE 5 #########################
+*/
+#page5-continued {
+    display: none;
+}
+/*
 ######################### ALL ENDING PAGES #########################
 */
 .ending1-text, .ending2-text {

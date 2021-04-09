@@ -60,3 +60,9 @@ function loadNewContent() {
     var message = name.concat(text).concat(name).concat(text2);
     document.getElementById("page4-alternate").innerHTML = message;
 }
+
+/* PAGE 5 */
+function refreshPage5() {
+    document.getElementById("page5").style.display = "none";
+    document.getElementById("page5-continued").style.display = "block";
+}
