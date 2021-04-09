@@ -12,7 +12,7 @@ const audioContext = new AudioContext();
 // Get sound effects
 const swordSound = new Audio("../Audio/sword_sound_1.mp3");
 const arrowSound = new Audio("../Audio/arrow_sound_1.mp3");
-const oceanSound = new Audio("../Audio/ocean_sound_edit.mp3");
+const oceanSound = new Audio("../Audio/ocean_sound.mp3");
 const warCrySound = new Audio("../Audio/war_cry_sound.mp3");
 
 // Pass sound effects into audio context
@@ -27,10 +27,10 @@ effect3.connect(audioContext.destination);
 effect4.connect(audioContext.destination);
 
 // Select Play buttons
-const playButtonSword1 = document.querySelector(".option2-button");
-const playButtonSword3b = document.querySelector("#page3b-button");
-const playButtonArrow = document.querySelector(".option1-button");
 const playButtonOcean = document.querySelector(".continue-button-index");
+const playButtonSword1 = document.querySelector(".option2-button");
+const playButtonArrow = document.querySelector(".option1-button");
+const playButtonSword3b = document.querySelector("#page3b-button");
 
 ////////////////////////////////////////////////////////////////////////////////
 // Page3C Audio
@@ -39,6 +39,34 @@ if (window.location.href.match("page3c.html") != null) {
     warCrySound.volume = 0.2;
     warCrySound.play();
 }
+
+////////////////////////////////////////////////////////////////////////////////
+
+// Add event listener to execute function on click
+playButtonOcean.addEventListener('click', function () {
+
+    // Check if the context is in a suspended state as per autoplay policy
+    if (audioContext.state === 'suspended') {
+        oceanSound.volume = 0.1;
+        audioContext.resume();
+    }
+
+    // Play or Pause the sound effect depending on the state
+    if (this.dataset.playing === 'false') {
+        oceanSound.volume = 0.1;
+        oceanSound.play();
+        this.dataset.playing = 'true';
+    } else if (this.dataset.playing === 'true') {
+        oceanSound.pause();
+        this.dataset.playing = 'false';
+    }
+
+}, false);
+
+// When sword sound effect has ended set playing to false
+oceanSound.addEventListener('ended', () => {
+    playButtonOcean.dataset.playing = 'false';
+}, false);
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -66,34 +94,6 @@ playButtonSword1.addEventListener('click', function () {
 // When sword sound effect has ended set playing to false
 swordSound.addEventListener('ended', () => {
     playButtonSword1.dataset.playing = 'false';
-}, false);
-
-////////////////////////////////////////////////////////////////////////////////
-
-// Add event listener to execute function on click
-playButtonSword3b.addEventListener('click', function () {
-
-    // Check if the context is in a suspended state as per autoplay policy
-    if (audioContext.state === 'suspended') {
-        swordSound.volume = 0.1;
-        audioContext.resume();
-    }
-
-    // Play or Pause the sound effect depending on the state
-    if (this.dataset.playing === 'false') {
-        swordSound.volume = 0.1;
-        swordSound.play();
-        this.dataset.playing = 'true';
-    } else if (this.dataset.playing === 'true') {
-        swordSound.pause();
-        this.dataset.playing = 'false';
-    }
-
-}, false);
-
-// When sword sound effect has ended set playing to false
-swordSound.addEventListener('ended', () => {
-    playButtonSword3b.dataset.playing = 'false';
 }, false);
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -127,27 +127,27 @@ arrowSound.addEventListener('ended', () => {
 ////////////////////////////////////////////////////////////////////////////////
 
 // Add event listener to execute function on click
-playButtonOcean.addEventListener('click', function () {
+playButtonSword3b.addEventListener('click', function () {
 
     // Check if the context is in a suspended state as per autoplay policy
     if (audioContext.state === 'suspended') {
-        oceanSound.volume = 0.1;
+        swordSound.volume = 0.1;
         audioContext.resume();
     }
 
     // Play or Pause the sound effect depending on the state
     if (this.dataset.playing === 'false') {
-        oceanSound.volume = 0.1;
-        oceanSound.play();
+        swordSound.volume = 0.1;
+        swordSound.play();
         this.dataset.playing = 'true';
     } else if (this.dataset.playing === 'true') {
-        oceanSound.pause();
+        swordSound.pause();
         this.dataset.playing = 'false';
     }
 
 }, false);
 
 // When sword sound effect has ended set playing to false
-oceanSound.addEventListener('ended', () => {
-    playButtonOcean.dataset.playing = 'false';
+swordSound.addEventListener('ended', () => {
+    playButtonSword3b.dataset.playing = 'false';
 }, false);
