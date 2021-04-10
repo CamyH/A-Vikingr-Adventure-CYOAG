@@ -32,11 +32,13 @@
                             Lectus proin nibh nisl condimentum id venenatis a condimentum. <br>
                             Which escape route should Sven and Egil take?</p>
                     </section>
-                    <button class="option1-button" onClick="refreshPage5();">The first way out is through the main door
+                    <button class="option1-button" onClick="page5RefreshOption1();">The first way out is through the
+                        main door
                         to the cell
                         hut, but you do not know what awaits you on the other side.</button>
                     &nbsp;
-                    <button class="option2-button" onClick="">The second way out is through a large opening in the wall;
+                    <button class="option2-button" onClick="page5RefreshOption2();">The second way out is through a
+                        large opening in the wall;
                         however, you do not know where it leads.</button>
                     &nbsp;
                     <button class="main-menu-button" onClick="mainMenu();">MAIN MENU</button>
@@ -48,8 +50,8 @@
                 </footer>
             </div>
         </div>
-        <!--Page 5 Refreshed-->
-        <div id="page5-continued">
+        <!--Page 5 Option 1 Refreshed-->
+        <div id="page5-option1">
             <div class="wrapper">
                 <header class="main-title">A Vikingr Adventure</header>
                 <main>
@@ -70,9 +72,48 @@
                         </p>
                         <p id="message"></p>
                     </section>
-                    <button class="option1-button" onClick="">TO add</button>
+                    <button class="option1-button" onClick="loadPage6();">Surprise attack the guard, tackling him to the
+                        ground
+                        before running for your life.</button>
                     &nbsp;
-                    <button class="option2-button" onClick="">TO add</button>
+                    <button class="option2-button" onClick="loadEnding3();">Sneak past the guard and run for the
+                        gate.</button>
+                    &nbsp;
+                    <button id="previous-content" class="main-menu-button" onClick="mainMenu();">MAIN
+                        MENU</button>
+                </main>
+                <footer>Made by Cameron Hunt
+                    <br><a href="https://github.com/CamyH/A-Vikingr-Adventure-CYOAG" target="_blank"><img
+                            class="footer-gh-icon" src="../Images/github-icon.png"></a>
+                </footer>
+            </div>
+        </div>
+
+        <!--Page 5 Option 2 Refreshed-->
+        <div id="page5-option2">
+            <div class="wrapper">
+                <header class="main-title">A Vikingr Adventure</header>
+                <main>
+                    <section class="content">
+                        <p class="page0-story">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                            Sed id semper risus in hendrerit gravida rutrum quisque non. Scelerisque felis imperdiet
+                            proin fermentum leo vel orci.
+                            Nec tincidunt praesent semper feugiat nibh sed pulvinar.
+                            Ornare aenean euismod elementum nisi quis. Eget est lorem ipsum dolor sit amet
+                            consectetur
+                            adipiscing elit. <br>
+                            In ornare quam viverra orci sagittis eu volutpat odio. Id diam vel quam elementum
+                            pulvinar
+                            etiam. Dolor morbi non arcu risus quis.
+                            Lectus proin nibh nisl condimentum id venenatis a condimentum.<br>
+                        </p>
+                        <p id="message"></p>
+                    </section>
+                    <button class="option1-button" onClick="">TO Add</button>
+                    &nbsp;
+                    <button class="option2-button" onClick="">TO Add</button>
                     &nbsp;
                     <button id="previous-content" class="main-menu-button" onClick="mainMenu();">MAIN
                         MENU</button>

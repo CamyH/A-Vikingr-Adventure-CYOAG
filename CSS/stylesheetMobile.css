@@ -195,7 +195,7 @@ button {
 /*
 ######################### STORY PAGE 5 #########################
 */
-#page5-continued {
+#page5-option1, #page5-option2 {
     display: none;
 }
 /*

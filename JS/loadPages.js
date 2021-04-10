@@ -15,9 +15,13 @@ function loadPage3c() { window.location.href = "../HTML/page3c.html"; }
 function loadPage4() { window.location.href = "../HTML/page4.html"; }
 // Loads Page 5
 function loadPage5() { window.location.href = "../HTML/page5.html"; }
+// Loads Page 6
+function loadPage6() { window.location.href = "../HTML/page6.html"; }
 // Loads Ending 1 
 function loadEnding1() { window.location.href = "../HTML/ending1.html"; }
 // Loads Ending 2
 function loadEnding2() { window.location.href = "../HTML/ending2.html"; }
+// Loads Ending 3
+function loadEnding3() { window.location.href = "../HTML/ending3.html"; }
 // Loads Playthough Stats Page
 function loadPlaythroughStats() { window.location.href = "../HTML/playthroughStats.html"; }

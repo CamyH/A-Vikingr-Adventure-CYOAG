@@ -62,7 +62,11 @@ function loadNewContent() {
 }
 
 /* PAGE 5 */
-function refreshPage5() {
+function page5RefreshOption1() {
     document.getElementById("page5").style.display = "none";
-    document.getElementById("page5-continued").style.display = "block";
+    document.getElementById("page5-option1").style.display = "block";
+}
+function page5RefreshOption2() {
+    document.getElementById("page5").style.display = "none";
+    document.getElementById("page5-option2").style.display = "block";
 }
