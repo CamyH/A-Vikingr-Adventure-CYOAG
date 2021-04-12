@@ -50,6 +50,7 @@ function saveCheck() {
         return alert("No save games found.");
     }
     //alert(localStorage.length);
+    alert(overlay.childElementCount);
     // Need to figure out how to stop duplicated buttons when you click load game button each time 
     if (localStorage.length <= 5) {
         for (var i = 0; i < localStorage.length; i++) {
@@ -59,9 +60,10 @@ function saveCheck() {
             button.innerText = localStorage[i];
             overlay.appendChild(button);
             overlay.appendChild(breakPoint);
-            
+
             //https://stackoverflow.com/questions/49820106/add-a-button-using-javascript-to-an-existing-div
             //https://stackoverflow.com/questions/5410745/how-can-i-get-a-list-of-the-items-stored-in-html-5-local-storage-from-javascript/5410827
         }
     }
+    alert(overlay.childElementCount);
 }
