@@ -15,25 +15,16 @@ function showNamePicker() {
 function hideNamePicker() {
     document.getElementById("name-picker").style.display = "none";
     showPage1();
-    getName();
 }
 // Show Page 1 of the story
 function showPage1() {
     document.getElementById("page0").style.display = "block";
-    showMessage();
 }
-function resetText() {
-    var paragraph = document.getElementById("message");
-    paragraph.textContent += "";
-}
-var playerName = "";
-function getNewName() { playerName = sessionStorage.getItem("playerName"); }
+
 function showMessage() {
-    // Bug - names are delayed - function is loaded straight away so need to figure out how to delay it, otherwise the name is always one behind.
+    var playerName = sessionStorage.getItem("playerName");
     var paragraph = document.getElementById("message");
     paragraph.textContent += "What should " + playerName + " do? Should he divide up their remaining food and give it to the crew or save it for later?";
-    // var textNode = document.createTextNode();
-    // paragraph.appendChild(textNode);
 }
 /*Only used for Index Page
 If user wants to go back to the main menu from the name picker content.

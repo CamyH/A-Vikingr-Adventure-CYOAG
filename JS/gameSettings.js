@@ -12,14 +12,13 @@ function restartGame() {
 // Get chosen name
 function getName() {
     // Clear previous name, if there is one
-    sessionStorage.clear();
+    sessionStorage.clear("playerName");
     let index = document.getElementById("names-list").selectedIndex;
     // Name Variable stores chosen name of character
     let name = document.getElementById("names-list").options[index].text;
 
     // Session storage to store player's name
     sessionStorage.setItem("playerName", name);
-    alert(sessionStorage.getItem("playerName"));
 }
 
 // Save Games
