@@ -35,12 +35,8 @@ body, html {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-main, .name-picker-main {
-    flex-grow: 1;
-}
-body {
-    background-color: #214252;
-}
+main, .name-picker-main { flex-grow: 1; }
+body { background-color: #214252; }
 .content, .credits-content, .ending1-content, .ending2-content {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 30px 100px 30px 100px;
@@ -102,9 +98,7 @@ button {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px 20px 10px 20px;
 }
-.continue-button {
-    background-color: #214252;
-}
+.continue-button { background-color: #214252; }
 #close-button {
     margin: 0;
     position: absolute;
@@ -113,18 +107,13 @@ button {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-#save-game-button {
-    margin-top: 30px;
-}
-.credits {
-    text-align: center;
-}
+#save-game-button { margin-top: 30px; }
+.credits { text-align: center; }
 /*
 ######################### Setting Footer, Main Content, All Buttons & Ending Pages Colour #########################
 */
-.content, .credits-content, .ending1-content, .ending2-content, footer, button, .continue-button {
-    background:#af2d2d;
-}
+.content, .credits-content, .ending1-content, .ending2-content, footer, 
+button, .continue-button { background:#af2d2d; }
 /*
 ######################### Name Picker Page #########################
 */
@@ -156,26 +145,20 @@ button {
 /*
 ######################### ALL STORY PAGE PROPERTIES #########################
 */
-#page0-story, #page1-story, #page2-story, #page3a-story, #page3b-story, #page3c-story, #page4-story, #page4-alternate {
-    padding: 20px;
-}
-.content {
-    padding: 5px;
-}
+#page0-story, #page1-story, #page2-story, #page3a-story, #page3b-story, 
+#page3c-story, #page4-story, #page4-alternate { padding: 20px 20px 10px 20px; }
+#message { padding: 0px 20px 10px 20px; }
+.content { padding: 5px; }
 
 /*
 ######################### STORY PAGE 0 (INDEX PAGE) #########################
 */
-#page0 {
-    display: none;
-}
+#page0 { display: none; }
 
 /*
 ######################### OUTCOMES PAGES #########################
 */
-#outcomes-index, #outcomes-page1, #outcomes-page3b {
-    display: none;
-}
+#outcomes-index, #outcomes-page1, #outcomes-page3b { display: none; }
 #consequence1, #consequence2 { padding-top: 10px; }
 
 /*
@@ -189,21 +172,15 @@ button {
 /*
 ######################### STORY PAGE 4 #########################
 */
-#alternate-choice {
-    display: none;
-}
+#alternate-choice { display: none; }
 /*
 ######################### STORY PAGE 5 #########################
 */
-#page5-option1, #page5-option2 {
-    display: none;
-}
+#page5-option1, #page5-option2 { display: none; }
 /*
 ######################### ALL ENDING PAGES #########################
 */
-.ending1-text, .ending2-text {
-    padding: 20px;
-}
+.ending1-text, .ending2-text { padding: 20px; }
 /*
 ######################### ENDING 1 PAGE #########################
 */
