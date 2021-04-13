@@ -21,7 +21,13 @@ if (window.location.href.match("page1.html")) {
 /* PAGE 2 */
 if (window.location.href.match("page2.html")) {
     window.onload = function page2Message() {
+        var mainStoryParagraph = document.getElementById("page2-story");
         var paragraph = document.getElementById("message");
+        mainStoryParagraph.textContent += ("After looting the encampment, "
+            + playerName + " finds several letters which informs you that you have landed in the county of Essex and nearby there is a Fort. "
+            + "After a quick discussion with your men, you decide that your best course of action is to take this Fort for yourselves to setup a base of operations inside England and take all the hidden riches. "
+            + "After walking for what felt like miles "
+            + playerName + " and his men set their eyes on their next prize. The Fort of Essex as they called it.");
         paragraph.textContent += playerName + " talks with his men, they collectively decide to attack this fort, some more wearily than others. How should you conquer this fort?";
     }
 }
