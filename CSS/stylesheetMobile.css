@@ -156,7 +156,7 @@ button {
 /*
 ######################### ALL STORY PAGE PROPERTIES #########################
 */
-#page0-story, .page1-story, .page2-story, .page3a-story, .page3b-story, .page3c-story, .page4-story, #page4-alternate {
+#page0-story, #page1-story, #page2-story, #page3a-story, #page3b-story, #page3c-story, #page4-story, #page4-alternate {
     padding: 20px;
 }
 .content {
