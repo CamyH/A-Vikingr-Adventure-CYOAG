@@ -43,13 +43,9 @@ function refreshPage4() {
     loadNewContent();
 }
 function loadNewContent() {
-    //var name = sessionStorage.getItem("playerName");
-    // Error just now
-    var name = "Sven";
-    var text = " tries to pick the lock on his shackles with the nail he found, to no avail. Instead ";
-    var text2 = " attracts the attention of the guard with the key ring.";
-    var message = name.concat(text).concat(name).concat(text2);
-    document.getElementById("page4-alternate").innerHTML = message;
+    var playerName = sessionStorage.getItem("playerName");
+    var paragraph = document.getElementById("page4-alternate");
+    paragraph.textContent += playerName + " tries to pick the lock on his shackles with the nail he found, to no avail. Instead " + playerName + " attracts the attention of the guard with the key ring.";
 }
 
 /* PAGE 5 */

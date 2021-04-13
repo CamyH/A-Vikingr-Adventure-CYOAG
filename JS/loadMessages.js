@@ -35,3 +35,24 @@ if (window.location.href.match("page3b.html")) {
         paragraph.textContent += "What should " + playerName + " do? Should he continue the fight or concede defeat?";
     }
 }
+
+/* PAGE 3c */
+if (window.location.href.match("page3c.html")) {
+    window.onload = function page3cMessage() { }
+}
+
+/* PAGE 4 */
+if (window.location.href.match("page4.html")) {
+    window.onload = function page4Message() {
+        var paragraph = document.getElementById("message");
+        paragraph.textContent += "What should " + playerName + " use this nail for?";
+    }
+}
+
+/* PAGE 5 */
+if (window.location.href.match("page5.html")) {
+    window.onload = function page5Message() {
+        var paragraph = document.getElementById("message");
+        paragraph.textContent += playerName + " and Egil both look around. You both spot two potential escape routes.";
+    }
+}
