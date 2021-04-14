@@ -75,7 +75,13 @@ if (window.location.href.match("page3c.html")) {
 /* PAGE 4 */
 if (window.location.href.match("page4.html")) {
     window.onload = function page4Message() {
+        var mainStoryParagraph = document.getElementById("page4-story");
         var paragraph = document.getElementById("message");
+        mainStoryParagraph.textContent += ("It has been two days since "
+            + playerName + " first had his shackles put on his wrists. "
+            + playerName + " has endured no food and very little water from the Saxons. He can see Egil in the cell opposite. "
+            + "Every day more and more of his men are taken from their cells and never seen again, presumably killed. "
+            + playerName + " knows he must escape if he is to live and starts looking around his cell. He can see an old, worn out, rusty nail in the corner of the floor. He picks it up.");
         paragraph.textContent += "What should " + playerName + " use this nail for?";
     }
 }

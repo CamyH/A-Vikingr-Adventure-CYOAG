@@ -44,9 +44,9 @@ function previousContentButton() {
 function refreshPage4() {
     document.getElementById("page4").style.display = "none";
     document.getElementById("alternate-choice").style.display = "block";
-    loadNewContent();
+    loadAlternateContent();
 }
-function loadNewContent() {
+function loadAlternateContent() {
     var playerName = sessionStorage.getItem("playerName");
     var paragraph = document.getElementById("page4-alternate");
     paragraph.textContent += playerName + " tries to pick the lock on his shackles with the nail he found, to no avail. Instead " + playerName + " attracts the attention of the guard with the key ring.";
