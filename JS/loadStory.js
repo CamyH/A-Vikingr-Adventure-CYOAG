@@ -89,7 +89,14 @@ if (window.location.href.match("page4.html")) {
 /* PAGE 5 */
 if (window.location.href.match("page5.html")) {
     window.onload = function page5Message() {
+        var mainStoryParagraph = document.getElementById("page5-story");
         var paragraph = document.getElementById("message");
-        paragraph.textContent += playerName + " and Egil both look around. You both spot two potential escape routes.";
+        mainStoryParagraph.textContent += (playerName + " starts trying to pick the lock on his cell. The guard notices and storms over demanding to know what he is doing."
+            + playerName + " shows him the nail and backs up into his cell, goading the guard to enter his cell. The guard grabs his key and opens the cell. "
+            + "Now is " + playerName + "'s chance to escape. He waits for the guard to come closer before charging at the guard, knocking him down. "
+            + playerName + " knocks the guard out cold with his shackles before finding the guard’s key to free his wrists. "
+            + playerName + " looks up and sees his dear friend and right-hand man Egil looking at him through his cell door. He rushes over, fumbling with the keys, before unlocking the door to Egil’s cell. "
+            + playerName + " and Egil both look around. You both spot two potential escape routes.");
+        paragraph.textContent += "Which escape route should " + playerName + " and Egil take?";
     }
 }
