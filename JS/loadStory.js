@@ -57,7 +57,19 @@ if (window.location.href.match("page3b.html")) {
 
 /* PAGE 3c */
 if (window.location.href.match("page3c.html")) {
-    window.onload = function page3cMessage() { }
+    window.onload = function page3cMessage() {
+        var mainStoryParagraph = document.getElementById("page3c-story");
+        mainStoryParagraph.textContent += ("The attack goes woefully, as "
+            + playerName + " and his men are running up to the front gates, Saxon archers start raining down arrows, picking off man by man. "
+            + playerName + ", Egil and the remaining Vikings reach the front gate and realise they have no way of breaking through. "
+            + "The Saxon soldiers on the other side of the gate decide to charge through the gate and bring the fight to "
+            + playerName + " and his men. A bloody battle ensues, and the Saxons show no mercy. The battle end nears as "
+            + playerName + " and Egil are surrounded by Saxons with no-where to run. They know the end is near but press on. The Saxons start attacking "
+            + playerName + " and Egil with spears, stabbing them both. Wounded, both "
+            + playerName + " and Egil continue to fight to no avail. The Saxons seize the opportunity and charge "
+            + playerName + " Sven and Egil, killing them once and for all. The battle is over. The Saxons have won. "
+            + "What is left of " + playerName + "'s Sven’s mighty band of Danish raiders scarper after seeing what happened to their leaders.");
+    }
 }
 
 /* PAGE 4 */
