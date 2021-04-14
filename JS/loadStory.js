@@ -4,6 +4,17 @@
 // PlayerName Global Variable
 var playerName = sessionStorage.getItem("playerName");
 
+/* INDEX PAGE - PAGE 0 */
+function showPage0Story() {
+    var playerName = sessionStorage.getItem("playerName");
+    var mainStoryParagraph = document.getElementById("page0-story");
+    var paragraph = document.getElementById("message");
+    mainStoryParagraph.textContent += (playerName + " looked out over the rising waves of his Longship, nicknamed, “Lucky”, for all the luck it gave "
+        + playerName + " and his crew during raids, and set his eyes on England for the first time. "
+        + playerName + " announced to his 115 strong crew that they were approaching land and to ready themselves for what they might face. They had set sail from their camp along the Danish coast 5 days ago and were starting to run low on provisions.");
+    paragraph.textContent += "What should " + playerName + " do? Should he divide up their remaining food and give it to the crew or save it for later?";
+}
+
 /* PAGE 1 */
 if (window.location.href.match("page1.html")) {
     window.onload = function page1Story() {
@@ -20,7 +31,7 @@ if (window.location.href.match("page1.html")) {
 
 /* PAGE 2 */
 if (window.location.href.match("page2.html")) {
-    window.onload = function page2Message() {
+    window.onload = function page2Story() {
         var mainStoryParagraph = document.getElementById("page2-story");
         var paragraph = document.getElementById("message");
         mainStoryParagraph.textContent += ("After looting the encampment, "
@@ -34,7 +45,7 @@ if (window.location.href.match("page2.html")) {
 
 /* PAGE 3a */
 if (window.location.href.match("page3a.html")) {
-    window.onload = function page3aMessage() {
+    window.onload = function page3aStory() {
         var mainStoryParagraph = document.getElementById("page3a-story");
         var paragraph = document.getElementById("message");
         mainStoryParagraph.textContent += ("The attack goes well. Sven’s tactics and leadership shine through the battle as you and your men surprise the Saxons and, even though you suffer heavy loses, the Saxons are fearful of your Viking war cries and valiant fighting and lay down their arms. "
@@ -46,7 +57,7 @@ if (window.location.href.match("page3a.html")) {
 
 /* PAGE 3b */
 if (window.location.href.match("page3b.html")) {
-    window.onload = function page3bMessage() {
+    window.onload = function page3bStory() {
         var mainStoryParagraph = document.getElementById("page3b-story");
         var paragraph = document.getElementById("message");
         mainStoryParagraph.textContent += ("The attack does not quite go to plan, as you sneak into the fort you get spotted by a guard who sounds the alarm. "
@@ -57,7 +68,7 @@ if (window.location.href.match("page3b.html")) {
 
 /* PAGE 3c */
 if (window.location.href.match("page3c.html")) {
-    window.onload = function page3cMessage() {
+    window.onload = function page3cStory() {
         var mainStoryParagraph = document.getElementById("page3c-story");
         mainStoryParagraph.textContent += ("The attack goes woefully, as "
             + playerName + " and his men are running up to the front gates, Saxon archers start raining down arrows, picking off man by man. "
@@ -74,7 +85,7 @@ if (window.location.href.match("page3c.html")) {
 
 /* PAGE 4 */
 if (window.location.href.match("page4.html")) {
-    window.onload = function page4Message() {
+    window.onload = function page4Story() {
         var mainStoryParagraph = document.getElementById("page4-story");
         var paragraph = document.getElementById("message");
         mainStoryParagraph.textContent += ("It has been two days since "
@@ -88,7 +99,7 @@ if (window.location.href.match("page4.html")) {
 
 /* PAGE 5 */
 if (window.location.href.match("page5.html")) {
-    window.onload = function page5Message() {
+    window.onload = function page5Story() {
         var mainStoryParagraph = document.getElementById("page5-story");
         var paragraph = document.getElementById("message");
         mainStoryParagraph.textContent += (playerName + " starts trying to pick the lock on his cell. The guard notices and storms over demanding to know what he is doing."
@@ -99,4 +110,18 @@ if (window.location.href.match("page5.html")) {
             + playerName + " and Egil both look around. You both spot two potential escape routes.");
         paragraph.textContent += "Which escape route should " + playerName + " and Egil take?";
     }
+}
+
+function option1Story() {
+    var mainStoryParagraph = document.getElementById("page5-story-option1");
+    var paragraph = document.getElementById("message-option1");
+    mainStoryParagraph.textContent += (playerName + " slowly opens the door, seeing nothing. As " + playerName + " continues to open the door bit by bit, a lone guard comes into view.");
+    paragraph.textContent += "What dooes " + playerName + " do?";
+}
+
+function option2Story() {
+    var mainStoryParagraph = document.getElementById("page5-story-option2");
+    mainStoryParagraph.textContent += (playerName + " and Egil slowly make their way through the hole in the wall. "
+        + "After making it through, they find themselves in the Fort’s food stores. They each grab the first bit of food they can find and eat it, after having been starved for the duration of their captivity. "
+        + "After quickly eating some food, Egil notices light shining through the door at the end of the room. Creeping up to it, you can hear guards talking on the other side. They decide to wait in the cold darkness, as the sound slowly vanishes into the distance.");
 }

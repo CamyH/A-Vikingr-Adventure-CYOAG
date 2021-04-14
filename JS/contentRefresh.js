@@ -20,16 +20,6 @@ function hideNamePicker() {
 function showPage1() {
     document.getElementById("page0").style.display = "block";
 }
-
-function showPage0Story() {
-    var playerName = sessionStorage.getItem("playerName");
-    var mainStoryParagraph = document.getElementById("page0-story");
-    var paragraph = document.getElementById("message");
-    mainStoryParagraph.textContent += (playerName + " looked out over the rising waves of his Longship, nicknamed, “Lucky”, for all the luck it gave "
-        + playerName + " and his crew during raids, and set his eyes on England for the first time. "
-        + playerName + " announced to his 115 strong crew that they were approaching land and to ready themselves for what they might face. They had set sail from their camp along the Danish coast 5 days ago and were starting to run low on provisions.");
-    paragraph.textContent += "What should " + playerName + " do? Should he divide up their remaining food and give it to the crew or save it for later?";
-}
 /*Only used for Index Page
 If user wants to go back to the main menu from the name picker content.
 */
