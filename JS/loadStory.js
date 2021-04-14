@@ -47,7 +47,10 @@ if (window.location.href.match("page3a.html")) {
 /* PAGE 3b */
 if (window.location.href.match("page3b.html")) {
     window.onload = function page3bMessage() {
+        var mainStoryParagraph = document.getElementById("page3b-story");
         var paragraph = document.getElementById("message");
+        mainStoryParagraph.textContent += ("The attack does not quite go to plan, as you sneak into the fort you get spotted by a guard who sounds the alarm. "
+            + "Despite this set back, you launch your attack and fight bravely but quickly realise just how outnumbered you are.");
         paragraph.textContent += "What should " + playerName + " do? Should he continue the fight or concede defeat?";
     }
 }
