@@ -35,7 +35,11 @@ if (window.location.href.match("page2.html")) {
 /* PAGE 3a */
 if (window.location.href.match("page3a.html")) {
     window.onload = function page3aMessage() {
+        var mainStoryParagraph = document.getElementById("page3a-story");
         var paragraph = document.getElementById("message");
+        mainStoryParagraph.textContent += ("The attack goes well. Sven’s tactics and leadership shine through the battle as you and your men surprise the Saxons and, even though you suffer heavy loses, the Saxons are fearful of your Viking war cries and valiant fighting and lay down their arms. "
+            + playerName + " orders Egil to  round up any remaining Saxons and imprison them, before looting any wealth and food. While your men follow your orders, you climb to the top of the tower and look down upon your new settlement with great excitement as you think of the many great things that are to come."
+            + "As " + playerName + " is admiring his newly conquered fort, one of his men approaches from behind asking what they should do with the Saxon prisoners.");
         paragraph.textContent += "What should " + playerName + " do?";
     }
 }
