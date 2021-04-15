@@ -7,12 +7,12 @@ Used to pick colour palette
 https://colorhunt.co/
 */
 
-/*FOR WIDESCREEN*/
+/* CONTAINS ALL CSS CHANGES FOR WIDESCREEN */
 
 /*
 ######################### Default Style #########################
 */
-.content, .outcomes-content, .ending1-content, .ending2-content, .credits-content {margin: 30px 150px 30px 150px; }
+.content, .outcomes-content, .credits-content, .ending1-content, .ending2-content {margin: 30px 150px 30px 150px; }
 /*
 ######################### All Buttons #########################
 */

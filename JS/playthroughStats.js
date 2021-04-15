@@ -29,10 +29,10 @@ function page1Stats() {
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("consequence3");
     if (message != null)
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     else {
         message = sessionStorage.getItem("consequence4");
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     }
 }
 
@@ -41,12 +41,12 @@ function page2Stats() {
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page2");
     if (message != null)
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     else if (message = sessionStorage.getItem("option2Page2") != null) {
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     } else {
         message = sessionStorage.getItem("option3Page2");
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     }
 }
 
@@ -58,12 +58,12 @@ function page3aStats() {
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page3a");
     if (message != null)
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     else if (message = sessionStorage.getItem("option2Page3a") != null) {
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     } else {
         message = sessionStorage.getItem("option3Page3a");
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     }
 }
 
@@ -75,10 +75,10 @@ function page3bStats() {
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("consequence11");
     if (message != null)
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     else {
         message = sessionStorage.getItem("consequence12")
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     }
 }
 
@@ -87,9 +87,13 @@ function page4Stats() {
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page4");
     if (message != null)
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     else {
         message = sessionStorage.getItem("option2Page4");
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     }
+}
+
+function page5Stats() {
+    // Page 5
 }
