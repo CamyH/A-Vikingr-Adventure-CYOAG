@@ -5,8 +5,6 @@ Used to read up on aligning items using Flex
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
 Used to pick colour palette
 https://colorhunt.co/
-CSS Animations:
-https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 */
 
 /*FOR MOBILE*/
@@ -18,30 +16,12 @@ body, html {
     margin:0;
     padding:0;
 }
-/* Only for body of Index Page */
-#body-index {
-    /* Safari, Chrome and Opera > 12.1 */
-    -webkit-animation: fadein 1s; 
-    /* Firefox < 16 */
-    -moz-animation: fadein 1s; 
-    /* Internet Explorer */
-     -ms-animation: fadein 1s; 
-     /* Opera < 12.1 */
-      -o-animation: fadein 1s; 
-      /* Default */
-         animation: fadein 1s;
-}
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
 main, .name-picker-main { flex-grow: 1; }
 body { background-color: #214252; }
 .content, .outcomes-content,.credits-content, .ending1-content, .ending2-content {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 30px 100px 30px 100px;
 }
-
 /*
 ######################### All Buttons #########################
 */
@@ -71,7 +51,7 @@ button {
     text-align: left;
     font-size: 1em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 5px 20px 10px 20px;
+    padding: 10px 30px 30px 30px;
 }
 
 #close-button {
@@ -84,7 +64,6 @@ button {
 }
 #save-game-button { margin-top: 30px; }
 .credits { text-align: center; }
-
 /*
 ######################### Name Picker Page #########################
 */
@@ -112,35 +91,6 @@ button {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px 20px 10px 20px;
 }
-
-/*
-######################### STORY PAGE 0 (INDEX PAGE) #########################
-*/
-#page0 { display: none; }
-
-/*
-######################### OUTCOMES PAGES #########################
-*/
-#outcomes-index, #outcomes-page1, #outcomes-page3b { display: none; }
-#consequence1, #consequence2 { padding-top: 10px; }
-
-/*
-######################### STORY PAGE 1 #########################
-*/
-
-/*
-######################### STORY PAGE 2 #########################
-*/
-
-/*
-######################### STORY PAGE 4 #########################
-*/
-#alternate-choice { display: none; }
-/*
-######################### STORY PAGE 5 #########################
-*/
-#page5-option1, #page5-option2 { display: none; }
-
 /*
 ######################### Load Games Overlay #########################
 */
@@ -156,13 +106,6 @@ button {
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 2;
     cursor: pointer;
-}
-/*
-######################### PLAYTHROUGH STATS PAGE #########################
-*/
-.playthroughStatsHeader {
-    text-decoration: underline;
-    font-style: italic;
 }
 /*
 ######################### Footer #########################

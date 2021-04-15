@@ -1,3 +1,7 @@
+/*Help Resources
+CSS Animations:
+https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+*/
 /*
 ######################### Default Styles #########################
 */
@@ -24,7 +28,6 @@ body { background-color: #214252; }
     to   { opacity: 1; }
 }
 main, .name-picker-main { flex-grow: 1; }
-
 /*
 ######################### Site Wide Wrapper #########################
 */
@@ -36,7 +39,6 @@ main, .name-picker-main { flex-grow: 1; }
     font-weight: bold;
     text-align: center;
 }
-
 /*
 ######################### Site Wide Header #########################
 */
@@ -50,20 +52,32 @@ header {
     height: 30px;
     background: #af2d2d;
 }
-
 /*
-######################### ALL STORY PAGE PROPERTIES #########################
+######################### STORY PAGE PROPERTIES #########################
 */
 #page0-story, #page1-story, #page2-story, #page3a-story, #page3b-story, 
 #page3c-story, #page4-story, #page4-alternate, #page5-story, #page5-story-option1, #page5-story-option2, #page6 { padding: 20px 20px 10px 20px; }
 #message, #message-option1 { padding: 0px 20px 10px 20px; }
 .outcomes-content { padding: 5px; }
-
+#page0 { display: none; }
+#outcomes-index, #outcomes-page1, #outcomes-page3b { display: none; }
+#consequence1, #consequence2 { padding-top: 10px; }
+/* PAGE 4 */
+#alternate-choice { display: none; }
+/* PAGE 5 */
+#page5-option1, #page5-option2 { display: none; }
 /*
-######################### ENDING PAGEs #########################
+######################### PLAYTHROUGH STATS PAGE #########################
+*/
+.playthroughStatsHeader {
+    padding-top: 10px;
+    text-decoration: underline;
+    font-style: italic;
+}
+/*
+######################### ENDING PAGES #########################
 */
 .ending1-text, .ending2-text { padding: 20px; }
-
 /*
 ######################### Setting Footer, Main Content, All Buttons & Ending Pages Colour #########################
 */
