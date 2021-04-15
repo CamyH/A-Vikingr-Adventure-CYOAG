@@ -11,7 +11,7 @@ body, html {
 }
 body { background-color: #214252; }
 /* Only for body of Index Page */
-#body-index {
+#index {
     /* Safari, Chrome and Opera > 12.1 */
     -webkit-animation: fadein 1s; 
     /* Firefox < 16 */
