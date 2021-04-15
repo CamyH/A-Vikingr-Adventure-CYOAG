@@ -10,18 +10,9 @@ https://colorhunt.co/
 /*FOR WIDESCREEN*/
 
 /*
-######################### Default Styles #########################
+######################### Default Style #########################
 */
-body, html {
-    margin:0;
-    padding:0;
-}
-main, .name-picker-main { flex-grow: 1; }
-body { background-color: #214252; }
-.content, .outcomes-content, .ending1-content, .ending2-content, .credits-content {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 30px 150px 30px 150px;
-}
+.content, .outcomes-content, .ending1-content, .ending2-content, .credits-content {margin: 30px 150px 30px 150px; }
 /*
 ######################### All Buttons #########################
 */
@@ -65,6 +56,7 @@ button {
 /*
 ######################### Name Picker Page #########################
 */
+#name-picker { display: none; }
 #names-list {
     text-align: center;
     width: 100px;
@@ -74,7 +66,6 @@ button {
     border-radius: 5px;
     margin-bottom: 20px;
 }
-#name-picker { display: none; }
 .name-picker-heading {
     font-size: 1.75em;
     text-align: center;
@@ -100,9 +91,7 @@ button {
 /*
 ######################### Playthrough Stats Page #########################
 */
-.stats {
-    font-size: 2em;
-}
+.stats { font-size: 2em; }
 /*
 ######################### Footer #########################
 */
