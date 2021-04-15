@@ -102,8 +102,8 @@ if (window.location.href.match("page5.html")) {
     window.onload = function page5Story() {
         var mainStoryParagraph = document.getElementById("page5-story");
         var paragraph = document.getElementById("message");
-        mainStoryParagraph.textContent += (playerName + " starts trying to pick the lock on his cell. The guard notices and storms over demanding to know what he is doing."
-            + playerName + " shows him the nail and backs up into his cell, goading the guard to enter his cell. The guard grabs his key and opens the cell. "
+        mainStoryParagraph.textContent += (playerName + " starts trying to pick the lock on his cell. The guard notices and storms over demanding to know what he is doing. "
+            + playerName + " shows him the nail and backs up into his cell, goading the guard to enter. The guard grabs his key and opens the cell. "
             + "Now is " + playerName + "'s chance to escape. He waits for the guard to come closer before charging at the guard, knocking him down. "
             + playerName + " knocks the guard out cold with his shackles before finding the guard’s key to free his wrists. "
             + playerName + " looks up and sees his dear friend and right-hand man Egil looking at him through his cell door. He rushes over, fumbling with the keys, before unlocking the door to Egil’s cell. "
@@ -132,7 +132,7 @@ if (window.location.href.match("page6.html")) {
         var mainStoryParagraph = document.getElementById("page6-story");
         mainStoryParagraph.textContent += (playerName + " tackles the guard to the ground, making the floors and walls of the dimly lit hallway shake with the clattering sound of the guard’s equipment and chainmail armour hitting the ground. "
             + "Egil manages to unsheathe the guard’s sword during the scuffle as two more guards come rushing over to help. "
-            + "Egil manages to fight them off, despite the weakness from little food showing, and turns around to see "
+            + "Egil manages to fight them off, despite the weakness from consuming very little food, and turns around to see "
             + playerName + " has finally subdued the guard.");
     }
 }
