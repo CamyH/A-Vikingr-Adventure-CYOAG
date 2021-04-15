@@ -110,13 +110,6 @@ button {
 }
 
 /*
-######################### ALL STORY PAGE PROPERTIES #########################
-*/
-#page0-story, #page1-story, #page2-story, #page3a-story, #page3b-story, 
-#page3c-story, #page4-story, #page4-alternate, #page5-story, #page5-story-option1, #page5-story-option2 { padding: 20px 20px 10px 20px; }
-#message, #message-option1 { padding: 0px 20px 10px 20px; }
-.outcomes-content { padding: 5px; }
-/*
 ######################### STORY PAGE 0 (INDEX PAGE) #########################
 */
 #page0 { display: none; }
@@ -143,13 +136,6 @@ button {
 ######################### STORY PAGE 5 #########################
 */
 #page5-option1, #page5-option2 { display: none; }
-/*
-######################### ENDING 1 PAGE #########################
-*/
-.ending1-text, .ending2-text { padding: 20px; }
-/*
-######################### ENDING 2 PAGE #########################
-*/
 
 /*
 ######################### Load Games Overlay #########################

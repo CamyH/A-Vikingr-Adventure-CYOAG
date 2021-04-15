@@ -52,6 +52,19 @@ header {
 }
 
 /*
+######################### ALL STORY PAGE PROPERTIES #########################
+*/
+#page0-story, #page1-story, #page2-story, #page3a-story, #page3b-story, 
+#page3c-story, #page4-story, #page4-alternate, #page5-story, #page5-story-option1, #page5-story-option2, #page6 { padding: 20px 20px 10px 20px; }
+#message, #message-option1 { padding: 0px 20px 10px 20px; }
+.outcomes-content { padding: 5px; }
+
+/*
+######################### ENDING PAGEs #########################
+*/
+.ending1-text, .ending2-text { padding: 20px; }
+
+/*
 ######################### Setting Footer, Main Content, All Buttons & Ending Pages Colour #########################
 */
 .content, .outcomes-content, .credits-content, .ending1-content, .ending2-content, footer, 

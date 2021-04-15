@@ -116,7 +116,7 @@ function option1Story() {
     var mainStoryParagraph = document.getElementById("page5-story-option1");
     var paragraph = document.getElementById("message-option1");
     mainStoryParagraph.textContent += (playerName + " slowly opens the door, seeing nothing. As " + playerName + " continues to open the door bit by bit, a lone guard comes into view.");
-    paragraph.textContent += "What dooes " + playerName + " do?";
+    paragraph.textContent += "What do " + playerName + " and Egil do?";
 }
 
 function option2Story() {
@@ -124,4 +124,15 @@ function option2Story() {
     mainStoryParagraph.textContent += (playerName + " and Egil slowly make their way through the hole in the wall. "
         + "After making it through, they find themselves in the Fort’s food stores. They each grab the first bit of food they can find and eat it, after having been starved for the duration of their captivity. "
         + "After quickly eating some food, Egil notices light shining through the door at the end of the room. Creeping up to it, you can hear guards talking on the other side. They decide to wait in the cold darkness, as the sound slowly vanishes into the distance.");
+}
+
+/* PAGE 6 */
+if (window.location.href.match("page6.html")) {
+    window.onload = function page6Story() {
+        var mainStoryParagraph = document.getElementById("page6-story");
+        mainStoryParagraph.textContent += (playerName + " tackles the guard to the ground, making the floors and walls of the dimly lit hallway shake with the clattering sound of the guard’s equipment and chainmail armour hitting the ground. "
+            + "Egil manages to unsheathe the guard’s sword during the scuffle as two more guards come rushing over to help. "
+            + "Egil manages to fight them off, despite the weakness from little food showing, and turns around to see "
+            + playerName + " has finally subdued the guard.");
+    }
 }
