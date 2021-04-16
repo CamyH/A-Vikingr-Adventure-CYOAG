@@ -86,6 +86,16 @@ function option3Page2() {
     var message = "You chose to attempt a head on surprise attack of the Fort, the true Viking way.";
     sessionStorage.setItem("option3Page2", message);
 }
+function consequence4Page2() {
+    // Show outcomes section
+    document.getElementById("outcomes-page2").style.display = "block";
+    // Hide other consequence text elements
+    document.getElementById("consequence2").style.display = "none";
+    document.getElementById("consequence3").style.display = "none";
+    // Add message to p element
+    var message = "This was the safest option and results in killing all but one soldier who you strike down when entering the camp.";
+    document.getElementById("consequence1").innerHTML = message;
+}
 
 /* OUTCOMES FOR PAGE3a */
 function option1Page3a() {
@@ -143,6 +153,24 @@ function option1Page4() {
 function option2Page4() {
     var message = "You tried and failed to pick the lock of your shackles. You ended up attracting the attention of the guard with the key ring.";
     sessionStorage.setItem("option2Page4", message);
+}
+
+/* OUTCOMES FOR PAGE5 */
+function option1Page5() {
+    var message = "You chose to escape through the cell hut door.";
+    sessionStorage.setItem("option1Page5", message);
+}
+function option2Page5() {
+    var message = "You chose to escape through the large opening in the wall.";
+    sessionStorage.setItem("option2Page5", message);
+}
+function option3Page5() {
+    var message = "You surprise attacked the guard before running for your life.";
+    sessionStorage.setItem("option3Page5", message);
+}
+function option4Page5() {
+    var message = "You snuck past the guard before running for your life.";
+    sessionStorage.setItem("option4Page5", message);
 }
 
 /* Continue Buttons */

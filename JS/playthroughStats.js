@@ -10,6 +10,7 @@ window.onload = function stats() {
     page3aStats();
     page3bStats();
     page4Stats();
+    page5Stats();
 }
 
 function page0Stats() {
@@ -42,7 +43,8 @@ function page2Stats() {
     var message = sessionStorage.getItem("option1Page2");
     if (message != null)
         div.innerHTML += "<br>" + message + "<br>";
-    else if (message = sessionStorage.getItem("option2Page2") != null) {
+    else if (sessionStorage.getItem("option2Page2") != null) {
+        message = sessionStorage.getItem("option2Page2")
         div.innerHTML += "<br>" + message + "<br>";
     } else {
         message = sessionStorage.getItem("option3Page2");
@@ -70,20 +72,23 @@ function page3aStats() {
 function page3bStats() {
     // Page 3b
     // Guard Clause - do not display stats if player has not picked this option
-    if (sessionStorage.getItem("consequence11") == null || sessionStorage.getItem("consequence12") == null)
+    if (sessionStorage.getItem("option1Page3b") == null || sessionStorage.getItem("option2Page3b") == null)
         return;
     var div = document.getElementById("stats");
-    var message = sessionStorage.getItem("consequence11");
+    var message = sessionStorage.getItem("option1Page3b");
     if (message != null)
         div.innerHTML += "<br>" + message + "<br>";
     else {
-        message = sessionStorage.getItem("consequence12")
+        message = sessionStorage.getItem("option2Page3b")
         div.innerHTML += "<br>" + message + "<br>";
     }
 }
 
 function page4Stats() {
     // Page 4
+    // Guard Clause - do not display stats if player has not progressed this far in the story
+    if (sessionStorage.getItem("option1Page4") == null || sessionStorage.getItem("option2Page4") == null)
+        return;
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page4");
     if (message != null)
@@ -96,4 +101,23 @@ function page4Stats() {
 
 function page5Stats() {
     // Page 5
+    // Guard Clause - do not display stats if player has not progressed this far in the story
+    if (sessionStorage.getItem("option1Page5") == null || sessionStorage.getItem("option2Page5") == null)
+        return;
+    var div = document.getElementById("stats");
+    message = sessionStorage.getItem("option1Page5");
+    if (message != null)
+        div.innerHTML += "<br>" + message + "<br>";
+    else {
+        message = sessionStorage.getItem("option2Page5");
+        div.innerHTML += "<br>" + message + "<br>";
+    }
+
+    message = sessionStorage.getItem("option3Page5");
+    if (message != null)
+        div.innerHTML += "<br>" + message + "<br>";
+    else {
+        message = sessionStorage.getItem("option4Page5");
+        div.innerHTML += "<br>" + message + "<br>";
+    }
 }
