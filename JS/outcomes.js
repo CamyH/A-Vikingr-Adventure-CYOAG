@@ -3,11 +3,15 @@
 // Hides Page 0 Content & calls correct consequence function
 function option1Index() {
     document.getElementById("page0").style.display = "none";
+    var message = "You chose to divide up the remaining food and hand it out to your men.";
+    sessionStorage.setItem("option1Index", message);
     consequence1Index();
 }
 // Hides Page 0 Content & calls correct consequence function
 function option2Index() {
     document.getElementById("page0").style.display = "none";
+    var message = "You chose not to divide up the remaining food and instead to save it for later.";
+    sessionStorage.setItem("option2Index", message);
     consequence2Index();
 }
 // Adds consequence1 message

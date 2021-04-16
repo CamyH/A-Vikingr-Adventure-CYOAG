@@ -16,11 +16,11 @@ window.onload = function stats() {
 function page0Stats() {
     // Page 0
     var div = document.getElementById("stats");
-    var message = sessionStorage.getItem("consequence1");
+    var message = sessionStorage.getItem("option1Index");
     if (message != null)
         div.innerHTML += message + "<br>";
     else {
-        message = sessionStorage.getItem("consequence2");
+        message = sessionStorage.getItem("option2Index");
         div.innerHTML += message + "<br>";
     }
 }
