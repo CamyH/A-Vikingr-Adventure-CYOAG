@@ -55,7 +55,7 @@ function page2Stats() {
 function page3aStats() {
     // Page 3a
     // Guard Clause - do not display stats if player has not picked this option
-    if (sessionStorage.getItem("option1Page3a") == null || sessionStorage.getItem("option2Page3a") == null || sessionStorage.getItem("option3Page3a") == null)
+    if (sessionStorage.getItem("option1Page3a") == null)
         return;
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page3a");
@@ -72,7 +72,7 @@ function page3aStats() {
 function page3bStats() {
     // Page 3b
     // Guard Clause - do not display stats if player has not picked this option
-    if (sessionStorage.getItem("option1Page3b") == null || sessionStorage.getItem("option2Page3b") == null)
+    if (sessionStorage.getItem("option1Page3b") == null)
         return;
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page3b");
@@ -87,7 +87,7 @@ function page3bStats() {
 function page4Stats() {
     // Page 4
     // Guard Clause - do not display stats if player has not progressed this far in the story
-    if (sessionStorage.getItem("option1Page4") == null || sessionStorage.getItem("option2Page4") == null)
+    if (sessionStorage.getItem("option1Page4") == null)
         return;
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page4");
@@ -102,7 +102,7 @@ function page4Stats() {
 function page5Stats() {
     // Page 5
     // Guard Clause - do not display stats if player has not progressed this far in the story
-    if (sessionStorage.getItem("option1Page5") == null || sessionStorage.getItem("option2Page5") == null)
+    if (sessionStorage.getItem("option1Page5") == null)
         return;
     var div = document.getElementById("stats");
     message = sessionStorage.getItem("option1Page5");
