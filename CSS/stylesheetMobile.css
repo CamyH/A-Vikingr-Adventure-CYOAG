@@ -23,7 +23,7 @@ button {
     border: none;
     text-decoration: none;
     border-radius: 8px;
-    font-size: 0.9em;
+    font-size: 1.2em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: auto;
     padding: 10px;
@@ -32,7 +32,7 @@ button {
 ######################### Main Menu - Index & Credits ######################### 
 */
 .about-heading, .credits-heading {
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-align: center;
     text-decoration: underline;
     padding: 10px 0 5px 0;
@@ -40,7 +40,7 @@ button {
 }
 .about-content, .credits {
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.3em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0px 20px 10px 20px;
 }
@@ -60,18 +60,24 @@ button {
 #names-list {
     text-align: center;
     width: 100px;
-    font-size: 0.8em;
+    font-size: 1.2em;
     border: 6px solid black;
     border-width: 1px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 .name-picker-heading {
-    font-size: 1.25m;
+    font-size: 1.5em;
     text-align: center;
     padding: 10px 0 10px 0;
     margin: 0;
 }
+/*
+######################### Story Pages #########################
+*/
+#page0-story, #page1-story, #page2-story, #page3a-story, #page3b-story, 
+#page3c-story, #page4-story, #page4-alternate, #page5-story, #page5-story-option1, #page5-story-option2, #page6-story, #consequence1, #consequence2 { font-size: 1.2em; }
+#message, #message-option1 { font-size: 1.1em; }
 /*
 ######################### Load Games Overlay #########################
 */
