@@ -9,7 +9,12 @@ body, html {
     margin:0;
     padding:0;
 }
-body { background-color: #214252; }
+body { 
+    background-image: url("../Images/valhalla\ 2-compressed.png");
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    /*background-color: #214252;*/
+}
 main, .name-picker-main { flex-grow: 1; }
 .content, .outcomes-content, .ending1-content, .ending2-content, .credits-content { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 /* Only for body of Index Page */
