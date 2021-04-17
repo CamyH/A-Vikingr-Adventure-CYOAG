@@ -10,16 +10,17 @@ window.onload = function stats() {
     page3aStats();
     page3bStats();
     page4Stats();
+    page5Stats();
 }
 
 function page0Stats() {
     // Page 0
     var div = document.getElementById("stats");
-    var message = sessionStorage.getItem("consequence1");
+    var message = sessionStorage.getItem("option1Index");
     if (message != null)
         div.innerHTML += message + "<br>";
     else {
-        message = sessionStorage.getItem("consequence2");
+        message = sessionStorage.getItem("option2Index");
         div.innerHTML += message + "<br>";
     }
 }
@@ -29,10 +30,10 @@ function page1Stats() {
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("consequence3");
     if (message != null)
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     else {
         message = sessionStorage.getItem("consequence4");
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     }
 }
 
@@ -41,55 +42,82 @@ function page2Stats() {
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page2");
     if (message != null)
-        div.innerHTML += message + "<br>";
-    else if (message = sessionStorage.getItem("option2Page2") != null) {
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
+    else if (sessionStorage.getItem("option2Page2") != null) {
+        message = sessionStorage.getItem("option2Page2")
+        div.innerHTML += "<br>" + message + "<br>";
     } else {
         message = sessionStorage.getItem("option3Page2");
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     }
 }
 
 function page3aStats() {
     // Page 3a
     // Guard Clause - do not display stats if player has not picked this option
-    if (sessionStorage.getItem("option1Page3a") == null || sessionStorage.getItem("option2Page3a") == null || sessionStorage.getItem("option3Page3a") == null)
+    if (sessionStorage.getItem("option1Page3a") == null)
         return;
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page3a");
     if (message != null)
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     else if (message = sessionStorage.getItem("option2Page3a") != null) {
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     } else {
         message = sessionStorage.getItem("option3Page3a");
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     }
 }
 
 function page3bStats() {
     // Page 3b
     // Guard Clause - do not display stats if player has not picked this option
-    if (sessionStorage.getItem("consequence11") == null || sessionStorage.getItem("consequence12") == null)
+    if (sessionStorage.getItem("option1Page3b") == null)
         return;
     var div = document.getElementById("stats");
-    var message = sessionStorage.getItem("consequence11");
+    var message = sessionStorage.getItem("option1Page3b");
     if (message != null)
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     else {
-        message = sessionStorage.getItem("consequence12")
-        div.innerHTML += message + "<br>";
+        message = sessionStorage.getItem("option2Page3b")
+        div.innerHTML += "<br>" + message + "<br>";
     }
 }
 
 function page4Stats() {
     // Page 4
+    // Guard Clause - do not display stats if player has not progressed this far in the story
+    if (sessionStorage.getItem("option1Page4") == null)
+        return;
     var div = document.getElementById("stats");
     var message = sessionStorage.getItem("option1Page4");
     if (message != null)
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
     else {
         message = sessionStorage.getItem("option2Page4");
-        div.innerHTML += message + "<br>";
+        div.innerHTML += "<br>" + message + "<br>";
+    }
+}
+
+function page5Stats() {
+    // Page 5
+    // Guard Clause - do not display stats if player has not progressed this far in the story
+    if (sessionStorage.getItem("option1Page5") == null)
+        return;
+    var div = document.getElementById("stats");
+    message = sessionStorage.getItem("option1Page5");
+    if (message != null)
+        div.innerHTML += "<br>" + message + "<br>";
+    else {
+        message = sessionStorage.getItem("option2Page5");
+        div.innerHTML += "<br>" + message + "<br>";
+    }
+
+    message = sessionStorage.getItem("option3Page5");
+    if (message != null)
+        div.innerHTML += "<br>" + message + "<br>";
+    else {
+        message = sessionStorage.getItem("option4Page5");
+        div.innerHTML += "<br>" + message + "<br>";
     }
 }

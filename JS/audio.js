@@ -15,6 +15,7 @@ const swordSound2 = new Audio("../Audio/sword_sound_2.mp3");
 const arrowSound = new Audio("../Audio/arrow_sound_1.mp3");
 const oceanSound = new Audio("../Audio/ocean_sound.mp3");
 const warCrySound = new Audio("../Audio/war_cry_sound.mp3");
+const chainmailSound = new Audio("../Audio/chainmail_sound.mp3");
 
 // Pass sound effects into audio context
 const effect1 = audioContext.createMediaElementSource(swordSound);
@@ -22,12 +23,14 @@ const effect2 = audioContext.createMediaElementSource(swordSound2);
 const effect3 = audioContext.createMediaElementSource(arrowSound);
 const effect4 = audioContext.createMediaElementSource(oceanSound);
 const effect5 = audioContext.createMediaElementSource(warCrySound);
+const effect6 = audioContext.createMediaElementSource(chainmailSound);
 
 effect1.connect(audioContext.destination);
 effect2.connect(audioContext.destination);
 effect3.connect(audioContext.destination);
 effect4.connect(audioContext.destination);
 effect5.connect(audioContext.destination);
+effect6.connect(audioContext.destination);
 
 // Select Play buttons
 const playButtonOcean = document.querySelector(".continue-button-index");
@@ -35,7 +38,7 @@ const playButtonSword = document.querySelector(".option2-button");
 const playButtonArrow = document.querySelector(".option1-button");
 
 ////////////////////////////////////////////////////////////////////////////////
-// Page3C & Page3B Audio
+// Page3C, Page3B & Page6 Audio
 // Different method of playing the audio - need it to be played when the page is loaded, having it run on button click is not possible in these cases.
 if (window.location.href.match("page3b.html") != null) {
     swordSound2.volume = 0.2;
@@ -44,6 +47,10 @@ if (window.location.href.match("page3b.html") != null) {
 if (window.location.href.match("page3c.html") != null) {
     warCrySound.volume = 0.2;
     warCrySound.play();
+}
+if (window.location.href.match("page6.html") != null) {
+    chainmailSound.volume = 0.2;
+    chainmailSound.play();
 }
 
 ////////////////////////////////////////////////////////////////////////////////

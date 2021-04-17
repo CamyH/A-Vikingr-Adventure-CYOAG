@@ -7,21 +7,12 @@ Used to pick colour palette
 https://colorhunt.co/
 */
 
-/*FOR WIDESCREEN*/
+/* CONTAINS ALL CSS CHANGES FOR WIDESCREEN */
 
 /*
-######################### Default Styles #########################
+######################### Default Style #########################
 */
-body, html {
-    margin:0;
-    padding:0;
-}
-main, .name-picker-main { flex-grow: 1; }
-body { background-color: #214252; }
-.content, .outcomes-content, .ending1-content, .ending2-content, .credits-content {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 30px 150px 30px 150px;
-}
+.content, .outcomes-content, .credits-content, .ending1-content, .ending2-content {margin: 30px 150px 30px 150px; }
 /*
 ######################### All Buttons #########################
 */
@@ -41,17 +32,17 @@ button {
 ######################### Main Menu - Index & Credits ######################### 
 */
 .about-heading, .credits-heading {
-    font-size: 2.5em;
+    font-size: 1.6em;
     text-align: center;
     text-decoration: underline;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 0px 0;
     margin: 0;
 }
 .about-content, .credits {
-    text-align: left;
-    font-size: 1.5em;
+    text-align: center;
+    font-size: 1.4em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 5px 20px 10px 20px;
+    padding: 0px 20px 10px 20px;
 }
 #close-button {
     display: none;
@@ -62,12 +53,10 @@ button {
     -ms-transform: translate(-50%, 50%);
     transform: translate(-50%, 500%);
 }
-.credits {
-    text-align: center;
-}
 /*
 ######################### Name Picker Page #########################
 */
+#name-picker { display: none; }
 #names-list {
     text-align: center;
     width: 100px;
@@ -77,17 +66,11 @@ button {
     border-radius: 5px;
     margin-bottom: 20px;
 }
-#name-picker { display: none; }
 .name-picker-heading {
     font-size: 1.75em;
     text-align: center;
     padding: 10px 0 10px 0;
     margin: 0;
-}
-.about-content {
-    text-align: left;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 5px 20px 10px 20px;
 }
 /*
 ######################### Load Games Overlay #########################
@@ -108,9 +91,7 @@ button {
 /*
 ######################### Playthrough Stats Page #########################
 */
-.stats {
-    font-size: 2em;
-}
+.stats { font-size: 2em; }
 /*
 ######################### Footer #########################
 */
