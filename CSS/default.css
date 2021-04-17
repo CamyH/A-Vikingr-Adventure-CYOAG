@@ -12,7 +12,7 @@ body, html {
 body { 
     background-image: url("../Images/valhalla\ 2-compressed.png");
     background-repeat: no-repeat;
-    background-size: 1920px 1080px;
+    background-size: cover;
     /*background-color: #214252;*/
 }
 main, .name-picker-main { flex-grow: 1; }
