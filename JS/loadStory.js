@@ -35,8 +35,8 @@ if (window.location.href.match("page2.html")) {
         var mainStoryParagraph = document.getElementById("page2-story");
         var paragraph = document.getElementById("message");
         mainStoryParagraph.textContent += ("After looting the encampment, "
-            + playerName + " finds several letters which informs you that you have landed in the county of Essex and nearby there is a Fort. "
-            + "After a quick discussion with your men, you decide that your best course of action is to take this Fort for yourselves to setup a base of operations inside England and take all the hidden riches. "
+            + playerName + " finds several letters which informs him that he has landed in the county of Essex and nearby there is a Fort. "
+            + "After a quick discussion with his men, he decides that the best course of action is to take this Fort for themselves to setup a base of operations inside England and take all the hidden riches. "
             + "After walking for what felt like miles "
             + playerName + " and his men set their eyes on their next prize. The Fort of Essex as they called it.");
         paragraph.textContent += playerName + " talks with his men, they collectively decide to attack this fort, some more wearily than others. How should you conquer this fort?";
@@ -48,8 +48,10 @@ if (window.location.href.match("page3a.html")) {
     window.onload = function page3aStory() {
         var mainStoryParagraph = document.getElementById("page3a-story");
         var paragraph = document.getElementById("message");
-        mainStoryParagraph.textContent += ("The attack goes well. Sven’s tactics and leadership shine through the battle as you and your men surprise the Saxons and, even though you suffer heavy loses, the Saxons are fearful of your Viking war cries and valiant fighting and lay down their arms. "
-            + playerName + " orders Egil to  round up any remaining Saxons and imprison them, before looting any wealth and food. While your men follow your orders, you climb to the top of the tower and look down upon your new settlement with great excitement as you think of the many great things that are to come."
+        mainStoryParagraph.textContent += ("The attack goes well. "
+            + playerName + "'s tactics and leadership shine through the battle as him and his men surprise the Saxons and, even though they suffer heavy loses, the Saxons are fearful of the loud Viking war cries and valiant fighting and lay down their arms. "
+            + playerName + " orders Egil to  round up any remaining Saxons and imprison them, before looting any wealth and food. While your men follow your orders, "
+            + playerName + " climbs to the top of the tower and looks down upon his new settlement with great excitement as he begins to think of the many great things that are to come."
             + "As " + playerName + " is admiring his newly conquered fort, one of his men approaches from behind asking what they should do with the Saxon prisoners.");
         paragraph.textContent += "What should " + playerName + " do?";
     }
@@ -60,8 +62,9 @@ if (window.location.href.match("page3b.html")) {
     window.onload = function page3bStory() {
         var mainStoryParagraph = document.getElementById("page3b-story");
         var paragraph = document.getElementById("message");
-        mainStoryParagraph.textContent += ("The attack does not quite go to plan, as you sneak into the fort you get spotted by a guard who sounds the alarm. "
-            + "Despite this set back, you launch your attack and fight bravely but quickly realise just how outnumbered you are.");
+        mainStoryParagraph.textContent += ("The attack does not quite go to plan, as "
+            + playerName + " is sneaking into the fort him and his men get spotted by a guard who sounds the alarm. "
+            + "Despite this set back, he launchs the attack and fights bravely but quickly realise just how outnumbered he is.");
         paragraph.textContent += "What should " + playerName + " do? Should he continue the fight or concede defeat?";
     }
 }
@@ -78,8 +81,8 @@ if (window.location.href.match("page3c.html")) {
             + playerName + " and Egil are surrounded by Saxons with no-where to run. They know the end is near but press on. The Saxons start attacking "
             + playerName + " and Egil with spears, stabbing them both. Wounded, both "
             + playerName + " and Egil continue to fight to no avail. The Saxons seize the opportunity and charge "
-            + playerName + " Sven and Egil, killing them once and for all. The battle is over. The Saxons have won. "
-            + "What is left of " + playerName + "'s Sven’s mighty band of Danish raiders scarper after seeing what happened to their leaders.");
+            + playerName + " and Egil, killing them once and for all. The battle is over. The Saxons have won. "
+            + "What is left of " + playerName + "'s mighty band of Danish raiders scarper after seeing what happened to their leaders.");
     }
 }
 
@@ -106,7 +109,7 @@ if (window.location.href.match("page5.html")) {
             + playerName + " shows him the nail and backs up into his cell, goading the guard to enter. The guard grabs his key and opens the cell. "
             + "Now is " + playerName + "'s chance to escape. He waits for the guard to come closer before charging at the guard, knocking him down. "
             + playerName + " knocks the guard out cold with his shackles before finding the guard’s key to free his wrists. "
-            + playerName + " looks up and sees his dear friend and right-hand man Egil looking at him through his cell door. He rushes over, fumbling with the keys, before unlocking the door to Egil’s cell. "
+            + playerName + " looks up and sees his right-hand man Egil looking at him through his cell door. He rushes over, fumbling with the keys, before unlocking the door to Egil’s cell. "
             + playerName + " and Egil both look around. You both spot two potential escape routes.");
         paragraph.textContent += "Which escape route should " + playerName + " and Egil take?";
     }
@@ -116,7 +119,7 @@ function option1Story() {
     var mainStoryParagraph = document.getElementById("page5-story-option1");
     var paragraph = document.getElementById("message-option1");
     mainStoryParagraph.textContent += (playerName + " slowly opens the door, seeing nothing. As " + playerName + " continues to open the door bit by bit, a lone guard comes into view.");
-    paragraph.textContent += "What do " + playerName + " and Egil do?";
+    paragraph.textContent += "What should " + playerName + " and Egil do?";
 }
 
 function option2Story() {
