@@ -9,7 +9,8 @@ body, html {
     margin:0;
     padding:0;
 }
-body { 
+body {
+    background-color: #214252;   
     background-image: url("../Images/valhalla-compressed.png");
     background-repeat: no-repeat;
     background-size: cover;

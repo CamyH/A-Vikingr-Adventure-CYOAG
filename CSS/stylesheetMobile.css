@@ -15,7 +15,6 @@ https://colorhunt.co/
 @media screen and (max-width: 800px) {
     body { 
         background-image: url("");
-        background-color: #214252;  
     }
 }
 .content, .outcomes-content, .credits-content, .ending1-content, .ending2-content { margin: 30px 100px 30px 100px; }
