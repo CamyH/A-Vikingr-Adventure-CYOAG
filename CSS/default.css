@@ -24,15 +24,15 @@ main, .name-picker-main { flex-grow: 1; }
 /* Only for body of Index Page */
 #index {
     /* Safari, Chrome and Opera > 12.1 */
-    -webkit-animation: fadein 1s; 
+    -webkit-animation: fadein 1.5s; 
     /* Firefox < 16 */
-    -moz-animation: fadein 1s; 
+    -moz-animation: fadein 1.5s; 
     /* Internet Explorer */
-     -ms-animation: fadein 1s; 
+     -ms-animation: fadein 1.5s; 
      /* Opera < 12.1 */
-      -o-animation: fadein 1s; 
+      -o-animation: fadein 1.5s; 
       /* Default */
-         animation: fadein 1s;
+         animation: fadein 1.5s;
 }
 @keyframes fadein {
     from { opacity: 0; }
