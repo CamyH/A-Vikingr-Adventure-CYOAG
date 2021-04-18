@@ -14,7 +14,6 @@ function showPage0Story() {
         + playerName + " announced to his 115 strong crew that they were approaching land and to ready themselves for what they might face. They had set sail from their camp along the Danish coast 5 days ago and were starting to run low on provisions.");
     paragraph.textContent += "What should " + playerName + " do? Should he divide up their remaining food and give it to the crew or save it for later?";
 }
-
 /* PAGE 1 */
 if (window.location.href.match("page1.html")) {
     window.onload = function page1Story() {
@@ -28,7 +27,6 @@ if (window.location.href.match("page1.html")) {
         paragraph.textContent += playerName + " decides that we will attack these soldiers and find out who they are and where in England they have landed. How should you attack this camp?";
     }
 }
-
 /* PAGE 2 */
 if (window.location.href.match("page2.html")) {
     window.onload = function page2Story() {
@@ -42,7 +40,6 @@ if (window.location.href.match("page2.html")) {
         paragraph.textContent += playerName + " talks with his men, they collectively decide to attack this fort, some more wearily than others. How should you conquer this fort?";
     }
 }
-
 /* PAGE 3a */
 if (window.location.href.match("page3a.html")) {
     window.onload = function page3aStory() {
@@ -56,7 +53,6 @@ if (window.location.href.match("page3a.html")) {
         paragraph.textContent += "What should " + playerName + " do?";
     }
 }
-
 /* PAGE 3b */
 if (window.location.href.match("page3b.html")) {
     window.onload = function page3bStory() {
@@ -68,7 +64,6 @@ if (window.location.href.match("page3b.html")) {
         paragraph.textContent += "What should " + playerName + " do? Should he continue the fight or concede defeat?";
     }
 }
-
 /* PAGE 3c */
 if (window.location.href.match("page3c.html")) {
     window.onload = function page3cStory() {
@@ -85,7 +80,6 @@ if (window.location.href.match("page3c.html")) {
             + "What is left of " + playerName + "'s mighty band of Danish raiders scarper after seeing what happened to their leaders.");
     }
 }
-
 /* PAGE 4 */
 if (window.location.href.match("page4.html")) {
     window.onload = function page4Story() {
@@ -99,7 +93,6 @@ if (window.location.href.match("page4.html")) {
         paragraph.textContent += "What should " + playerName + " use this nail for?";
     }
 }
-
 /* PAGE 5 */
 if (window.location.href.match("page5.html")) {
     window.onload = function page5Story() {
@@ -114,21 +107,18 @@ if (window.location.href.match("page5.html")) {
         paragraph.textContent += "Which escape route should " + playerName + " and Egil take?";
     }
 }
-
 function option1Story() {
     var mainStoryParagraph = document.getElementById("page5-story-option1");
     var paragraph = document.getElementById("message-option1");
     mainStoryParagraph.textContent += (playerName + " slowly opens the door, seeing nothing. As " + playerName + " continues to open the door bit by bit, a lone guard comes into view.");
     paragraph.textContent += "What should " + playerName + " and Egil do?";
 }
-
 function option2Story() {
     var mainStoryParagraph = document.getElementById("page5-story-option2");
     mainStoryParagraph.textContent += (playerName + " and Egil slowly make their way through the hole in the wall. "
         + "After making it through, they find themselves in the Fort’s food stores. They each grab the first bit of food they can find and eat it, after having been starved for the duration of their captivity. "
         + "After quickly eating some food, Egil notices light shining through the door at the end of the room. Creeping up to it, you can hear guards talking on the other side. They decide to wait in the cold darkness, as the sound slowly vanishes into the distance.");
 }
-
 /* PAGE 6 */
 if (window.location.href.match("page6.html")) {
     window.onload = function page6Story() {
@@ -137,5 +127,16 @@ if (window.location.href.match("page6.html")) {
             + "Egil manages to unsheathe the guard’s sword during the scuffle as two more guards come rushing over to help. "
             + "Egil manages to fight them off, despite the weakness from consuming very little food, and turns around to see "
             + playerName + " has finally subdued the guard.");
+    }
+}
+/* PAGE 7 */
+if (window.location.href.match("page7.html")) {
+    window.onload = function page7Story() {
+        var mainStoryParagraph = document.getElementById("page7-story");
+        mainStoryParagraph.textContent += (playerName + " and Egil rush towards their escape route and burst out into the courtyard. "
+            + "Before thinking, they both start running as fast as they can towards the gates. The surrounding Saxon guards look on in bewilderment before running after them. "
+            + "After a while, the Saxon guards, exhausted from running with their weapons and shields, give up the chase, letting "
+            + playerName + " and Egil go. " + playerName + " and Egil did not realise the Saxon’s had given up pursuit until they had reached “Lucky” the ship. "
+            + "They both grabbed whatever they could find from Lucky, before setting off into the distance to find the nearest village.");
     }
 }
