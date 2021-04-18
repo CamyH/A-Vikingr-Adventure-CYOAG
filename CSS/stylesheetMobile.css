@@ -12,6 +12,12 @@ https://colorhunt.co/
 /*
 ######################### Default Style #########################
 */
+@media screen and (max-width: 800px) {
+    body { 
+        background-image: url("");
+        background-color: #214252;  
+    }
+}
 .content, .outcomes-content, .credits-content, .ending1-content, .ending2-content { margin: 30px 100px 30px 100px; }
 /*
 ######################### All Buttons #########################
@@ -76,7 +82,7 @@ button {
 ######################### Story Pages #########################
 */
 #page0-story, #page1-story, #page2-story, #page3a-story, #page3b-story, 
-#page3c-story, #page4-story, #page4-alternate, #page5-story, #page5-story-option1, #page5-story-option2, #page6-story, #consequence1, #consequence2 { font-size: 1.2em; }
+#page3c-story, #page4-story, #page4-alternate, #page5-story, #page5-story-option1, #page5-story-option2, #page6-story, #page7-story, #consequence1, #consequence2 { font-size: 1.2em; }
 #message, #message-option1 { font-size: 1.1em; }
 /*
 ######################### Load Games Overlay #########################

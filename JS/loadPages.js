@@ -17,6 +17,8 @@ function loadPage4() { window.location.href = "../HTML/page4.html"; }
 function loadPage5() { window.location.href = "../HTML/page5.html"; }
 // Loads Page 6
 function loadPage6() { window.location.href = "../HTML/page6.html"; }
+// Loads Page 7
+function loadPage7() { window.location.href = "../HTML/page7.html"; }
 // Loads Ending 1 
 function loadEnding1() { window.location.href = "../HTML/ending1.html"; }
 // Loads Ending 2
