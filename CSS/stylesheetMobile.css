@@ -84,22 +84,6 @@ button {
 #page3c-story, #page4-story, #page4-alternate, #page5-story, #page5-story-option1, #page5-story-option2, #page6-story, #page7-story, #consequence1, #consequence2 { font-size: 1.2em; }
 #message, #message-option1 { font-size: 1.1em; }
 /*
-######################### Load Games Overlay #########################
-*/
-#overlay {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 2;
-    cursor: pointer;
-}
-/*
 ######################### Footer #########################
 */
 footer {

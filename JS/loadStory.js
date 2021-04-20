@@ -19,7 +19,7 @@ if (window.location.href.match("page1.html")) {
     window.onload = function page1Story() {
         var mainStoryParagraph = document.getElementById("page1-story");
         var paragraph = document.getElementById("message");
-        mainStoryParagraph.textContent += ("Lucky the longship crashes into the east coast of England as "
+        mainStoryParagraph.textContent += ("'Lucky' the longship crashes into the east coast of England as "
             + playerName + " and his Viking warriors rush onto the beach before them. They soon stop and look around, taking in their grey surroundings. In the distance, "
             + playerName + "'s right-hand man and good friend, Egil,  spots a small plume of smoke and, in a loud, husky, voice shouts 'CAMP THERE!' while pointing his finger in the direction of the smoke. "
             + playerName + " orders Egil and his men to follow him as they rush towards the billowing plume of smoke. As they get closer, the sound of men talking and laughing can be heard. "
