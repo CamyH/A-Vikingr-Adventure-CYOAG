@@ -69,7 +69,6 @@ if (playButtonOcean) {
         if (this.dataset.playing === 'false') {
             oceanSound.volume = 0.1;
             oceanSound.play();
-            oceanSound.loop = true;
             this.dataset.playing = 'true';
         } else if (this.dataset.playing === 'true') {
             oceanSound.pause();
