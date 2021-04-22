@@ -13,7 +13,7 @@ const audioContext = new AudioContext();
 const swordSound = new Audio("../Audio/sword_sound_1.mp3");
 const swordSound2 = new Audio("../Audio/sword_sound_2.mp3");
 const arrowSound = new Audio("../Audio/arrow_sound_1.mp3");
-const oceanSound = new Audio("../Audio/ocean_sound.mp3");
+const oceanSound = new Audio("Audio/ocean_sound.mp3");
 const warCrySound = new Audio("../Audio/war_cry_sound.mp3");
 const chainmailSound = new Audio("../Audio/chainmail_sound.mp3");
 
